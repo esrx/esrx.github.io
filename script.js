@@ -28,11 +28,11 @@ var hash = "";
 
 $('#bot').clickToggle(function (){
    $(this).next('.target');
-   $("#bot").html('📘BOT');
+   $("#bot").html('📘bot');
    butt = "";
 }, function (){
    $(this).next('.target');
-   $("#bot").html('📕BOT');
+   $("#bot").html('📕bot');
    butt = "+-source:twittbot.net+-source:botbird_tweets+-source:Cubi.so+-source:Cheap_Bots_Done_Quick";
 });
 
@@ -48,11 +48,11 @@ $('#links').clickToggle(function (){
 
 $('#gif').clickToggle(function (){
    $(this).next('.target');
-   $("#gif").html('📘GIF');
+   $("#gif").html('📘gif');
    card = "";
 }, function (){
    $(this).next('.target');
-   $("#gif").html('📕GIF');
+   $("#gif").html('📕gif');
    card = "+-card_name:animated_gif";
 });
 
