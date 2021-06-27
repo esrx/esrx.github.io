@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width , user-scalable=no">
+<meta name="twitter:title" content="">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/logos/htc-summary-card.jpg"/>
+</head>
+<body>
+<p id="lightd" class="google"><a href="https://www.google.com"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"></a></p>
+<p id="darkd" class="google"><a href="/google"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Google_2015_logo_colorless_mourning_period.svg"/></a></p>
+<form>
+<textarea id="input" style="width:90%;height:100px;"></textarea>
+<br>
+<button type="button" class="ja" onclick="clearTextarea()"/>削除</button>
+<input type=hidden id="or" value="OR">
+<button type="button" class="en" onclick="ors();">OR</button>
+<input type=hidden id="and" value="AND">
+<button type="button" class="en" onclick="ands();">AND</button>
+<button type="submit" class="ja">送信</button>
+<br>
+<select id="lang" class="ja">
+<option value="und">und</option>
+<option value="ja">日本語</option>
+<option value="en">英語</option>
+<option value="zh">中国語</option>
+<option value="zh-cn">簡体字</option>
+<option value="zh-tw">繁体字</option>
+<option value="fr">フランス語</option>
+<option value="ar">アラビア語</option>
+<option value="es">スペイン語</option>
+<option value="de">ドイツ語</option>
+<option value="it">イタリア語</option>
+<option value="id">インドネシア語</option>
+<option value="pt">ポルトガル語</option>
+<option value="ko">韓国語</option>
+<option value="tr">トルコ語</option>
+<option value="ru">ロシア語</option>
+<option value="nl">オランダ語</option>
+<option value="fil">タガログ語</option>
+<option value="ms">マレー語</option>
+<option value="hi">ヒンディー語</option>
+<option value="no">ノルウェー語</option>
+<option value="sv">スウェーデン語</option>
+<option value="fi">フィンランド語</option>
+<option value="da">デンマーク語</option>
+<option value="pl">ポーランド語</option>
+<option value="hu">ハンガリー語</option>
+<option value="fa">ペルシャ語</option>
+<option value="he">ヘブライ語</option>
+<option value="ur">ウルドゥー語</option>
+<option value="th">タイ語</option>
+<option value="uk">ベラルーシ語</option>
+<option value="ca">カタロニア語</option>
+<option value="el">ギリシャ語</option>
+<option value="eu">バスク語</option>
+<option value="cs">チェコ語</option>
+<option value="gl">ガリシア語</option>
+<option value="ro">ルーマニア語</option>
+<option value="hr">クロアチア語</option>
+<option value="vi">ベトナム語</option>
+<option value="bn">ベンガル語</option>
+<option value="bg">マケドニア語</option>
+<option value="sr">セルビア語</option>
+<option value="gu">グジャラート語</option>
+<option value="mr">マラーティー語</option>
+<option value="ta">タミル語</option>
+<option value="te">テルク語</option>
+<option value="kn">カンナダ語</option>
+</select>
+<button type="button" id="language" class="ja">lang</button>
+<br>
+<button type="button" id="bot" class="ja">📕BOT</button>
+<button type="button" id="gif" class="ja">📕GIF</button>
+<button type="button" id="replies" class="ja">📕replies</button>
+<button type="button" id="choice" class="ja">📘choice</button>
+<button type="button" id="name" class="ja">📕Name</button>
+<button type="button" id="quote" class="ja">📘quote</button>
+<button type="button" id="links" class="ja">📘links</button>
+<button type="button" id="hashtags" class="ja">📘hashtags</button>
+</form>
+<br><br>
+<a href="https://twitter.com/i/trends" id="output"></a>
+<br><br>
+<a href="https://twitter.com/i/directory"><img src="https://ton.twimg.com/tfw/assets/link_v1_e64f66f5650df987d97cc5f00c4cb5987f367028.svg"></a>
+<a href="https://twitter.com/login?redirect_after_login=https://tweetdeck.twitter.com"><img src="https://ton.twimg.com/tweetdeck-web/web/assets/global/tweetdeck.8229fe0932.svg"/></a>
+<br>
+<button id="mode" class="ja">モード変更</button><p class="hoge"></p>
+<p id="light">
+<a class="twitter-timeline" data-lang="ja" data-height="500" href="https://twitter.com/TwitterLifeline/lists/crisis-response">A Twitter List by TwitterLifeline</a>
+</p>
+<p id="dark">
+<a class="twitter-timeline" data-lang="ja" data-theme="dark" data-height="500" href="https://twitter.com/TwitterLifeline/lists/crisis-response">A Twitter List by TwitterLifeline</a>
+</p>
+
+</div>
+</body>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</html>
