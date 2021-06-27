@@ -153,7 +153,7 @@ var User = document.getElementById('and').value;document.getElementById('input')
 
 
 function clearTextarea() {
-var textclear = document.getElementById("input");
+var textclear = document.getElementById("texta");
 textclear.value = '';
 $('#output').text('');
 }
