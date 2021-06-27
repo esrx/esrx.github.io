@@ -119,7 +119,7 @@ $('#language').clickToggle(function (){
    lang = "+-lang:" + select;
 });
 
-$('#search').click( sample );
+$('#search').submit( sample );
 function sample() {
 var target = $('#texta').val();
 $('#output').text('検索結果：' + target);
