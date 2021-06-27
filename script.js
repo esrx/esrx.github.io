@@ -128,11 +128,20 @@ var target = target.replace('+','%20');
 var target = target.replace('#','%23');
 var target = target.replace('&','%26');
 $('#output').attr('href', 'https://twitter.com/search?q=' + target + lang + repl + quot + card + link + hash + choi + butt + name +'&src=typed_query&f=live');
-    console.log(target);
 return false;
 }
 
-
+$('#iOS').click( evolve );
+function evolve() {
+var target = $('#texta').val();
+$('#output').text('検索結果：' + target);
+var target = target.replace('%','%25');
+var target = target.replace('+','%20');
+var target = target.replace('#','%23');
+var target = target.replace('&','%26');
+$('#output').attr('href', 'https://www.google.com/search?q=' + target + '+ios&gl=us&hl=en#fpstate=aig');
+return false;
+}
 
 function ors() {
 var User = document.getElementById('or').value;document.getElementById('input').value += " " + User + " ";
