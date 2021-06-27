@@ -144,10 +144,10 @@ return false;
 }
 
 function ors() {
-var User = document.getElementById('or').value;document.getElementById('input').value += " " + User + " ";
+var User = document.getElementById('or').value;document.getElementById('texta').value += " " + User + " ";
 }
 function ands() {
-var User = document.getElementById('and').value;document.getElementById('input').value += " " + User + " ";
+var User = document.getElementById('and').value;document.getElementById('texta').value += " " + User + " ";
 }
 
 
