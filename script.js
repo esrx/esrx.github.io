@@ -121,7 +121,7 @@ $('#language').clickToggle(function (){
 
 $('form').submit( sample );
 function sample() {
-var target = $('#input').val();
+var target = $('#texta').val();
 $('#output').text('検索結果：' + target);
 var target = target.replace('%','%25');
 var target = target.replace('+','%20');
