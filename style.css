@@ -1,0 +1,107 @@
+textarea{
+background-image: url(https://abs.twimg.com/emoji/v2/svg/1f50d.svg);
+background-repeat: no-repeat;
+background-position: left bottom 50%;
+background-size: 50% 50%;
+}
+
+form {
+text-align: center;
+margin: auto;
+}
+
+.google {
+text-align: center;
+margin: auto;
+}
+
+button.ja{
+padding:-right 10px;
+padding:-left 10px;
+margin: auto;
+color: white;
+background: #1DA1F2;
+border: none;
+outline: none;
+
+font-weight: bold;
+display:inline-block;
+border-radius: 50px;
+
+touch-action: manipulation;
+}
+
+button.en{
+padding-right: 10px;
+padding-left: 10px;
+padding-top: 2px;
+padding-bottom: 2px;
+margin: auto;
+color: white;
+background: #1DA1F2;
+border: none;
+outline: none;
+
+display:inline-block;
+border-radius: 50px;
+
+touch-action: manipulation;
+}
+
+
+
+
+h1 {
+padding-right: 10px;
+padding-left: 10px;
+
+color: white;
+background: #1DA1F2;
+
+border-radius: 50px;
+border: 1px solid black;
+
+display:inline-block;
+}
+
+a {
+color: #1da1f2;
+text-decoration:none;
+font-weight:bold;
+}
+a:hover {
+text-decoration:underline;
+}
+
+
+@media (prefers-color-scheme: light) {
+    body {
+    background-color: white;
+    }
+.hoge:after{
+content:"light";
+}
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+    background-color: #23282f;
+    }
+    p {
+    color:  white;
+    }
+.hoge:after{
+content:"dark";
+}
+textarea{
+background-color: #444444;
+color:  white;
+}
+button{
+font-weight:bolder;
+color: black;
+}
+:root{
+--mycontent:black;
+}
+}
