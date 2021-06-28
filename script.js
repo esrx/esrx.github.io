@@ -139,7 +139,7 @@ var target = target.replace('%','%25');
 var target = target.replace('+','%20');
 var target = target.replace('#','%23');
 var target = target.replace('&','%26');
-var target = target.replace('%AF','%0A');
+var target = target.replace('\n','%0A');
 $('#output').attr('href', 'https://twitter.com/intent/tweet?text=' + target);
 return false;
 }
