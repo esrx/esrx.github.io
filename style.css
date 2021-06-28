@@ -49,6 +49,18 @@ touch-action: manipulation;
 }
 
 button.us{
+padding-right: 10px;
+padding-left: 10px;
+margin: auto;
+color: white;
+background: #1DA1F2;
+border: none;
+outline: none;
+
+display:inline-block;
+border-radius: 50px;
+
+touch-action: manipulation;
 }
 
 h1 {
