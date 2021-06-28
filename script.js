@@ -131,6 +131,18 @@ $('#output').attr('href', 'https://twitter.com/search?q=' + target + lang + repl
 return false;
 }
 
+$('#tweet').click( tensio );
+function tensio() {
+var target = $('#texta').val();
+$('#output').text('検索結果：' + target);
+var target = target.replace('%','%25');
+var target = target.replace('+','%20');
+var target = target.replace('#','%23');
+var target = target.replace('&','%26');
+$('#output').attr('href', 'https://twitter.com/intent/tweet?text=' + target);
+return false;
+}
+
 $('#iOS').click( evolve );
 function evolve() {
 var target = $('#texta').val();
