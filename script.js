@@ -135,10 +135,10 @@ $('#tweet').click( tensio );
 function tensio() {
 var target = $('#texta').val();
 $('#output').text('ツイート：' + target);
-var target = target.replace('%','%25');
-var target = target.replace('#','%23');
-var target = target.replace('&','%26');
-var target = target.replace('\n','%0A');
+var target = target.replace(/%/g,'%25');
+var target = target.replace(/#/g,'%23');
+var target = target.replace(/&/g,'%26');
+var target = target.replace(/\n/g,'%0A');
 $('#output').attr('href', 'https://twitter.com/intent/tweet?text=' + target);
 return false;
 }
