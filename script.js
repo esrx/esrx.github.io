@@ -124,7 +124,7 @@ function sample() {
 var target = $('#texta').val();
 $('#output').text('検索結果：' + target);
 var target = target.replace('%','%25');
-var target = target.replace('+','%20');
+var target = target.replace('++','+');
 var target = target.replace('#','%23');
 var target = target.replace('&','%26');
 $('#output').attr('href', 'https://twitter.com/search?q=' + target + lang + repl + quot + card + link + hash + choi + butt + name +'&src=typed_query&f=live');
@@ -136,7 +136,6 @@ function tensio() {
 var target = $('#texta').val();
 $('#output').text('検索結果：' + target);
 var target = target.replace('%','%25');
-var target = target.replace('+','%20');
 var target = target.replace('#','%23');
 var target = target.replace('&','%26');
 var target = target.replace('\n','%0A');
