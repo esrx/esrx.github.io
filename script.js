@@ -134,7 +134,7 @@ return false;
 $('#tweet').click( tensio );
 function tensio() {
 var target = $('#texta').val();
-$('#output').text('検索結果：' + target);
+$('#output').text('ツイート：' + target);
 var target = target.replace('%','%25');
 var target = target.replace('#','%23');
 var target = target.replace('&','%26');
