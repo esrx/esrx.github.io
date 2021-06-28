@@ -139,8 +139,8 @@ $('#output').text('ツイート：' + target);
 var target = target.replace(/%/g,'%25');
 var target = target.replace(/#/g,'%23');
 var target = target.replace(/&/g,'%26');
-var target = target.replace(/\s/g,'+');
 var target = target.replace(/\n/g,'%0A');
+var target = target.replace(/\s/g,'+');
 $('#output').attr('href', 'https://twitter.com/intent/tweet?text=' + target);
 return false;
 }
