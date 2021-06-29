@@ -25,6 +25,7 @@ var lang = "";
 var quot = "";
 var link = "";
 var hash = "";
+var sour = "";
 
 $('#bot').clickToggle(function (){
    $(this).next('.target');
@@ -106,6 +107,15 @@ $('#hashtags').clickToggle(function (){
    quot = "";
 });
 
+$('#source').clickToggle(function (){
+   $(this).next('.target');
+   $("#source").html('📕source');
+   sour = "+(source:Twitter_for_iPhone+OR+source:Twitter_for_iPad+OR+source:Twitter_for_Android+OR+source:Twitter_for_Mac+OR+source:Twitter_Web_App+OR+Twitter_Web_Client+OR+source:TweetDeck)";
+}, function (){
+   $(this).next('.target');
+   $("#source").html('📘source');
+   sour = "";
+});
 
 $('#language').clickToggle(function (){
    $(this).next('.target');
@@ -128,7 +138,7 @@ var target = target.replace(/\s\s/g,'+');
 var target = target.replace(/\s/g,'+');
 var target = target.replace(/#/g,'%23');
 var target = target.replace(/&/g,'%26');
-$('#output').attr('href', 'https://twitter.com/search?q=' + target + lang + repl + quot + card + link + hash + choi + butt + name +'&src=typed_query&f=live');
+$('#output').attr('href', 'https://twitter.com/search?q=' + target + lang + repl + quot + card + link + hash + choi + butt + sour + name +'&src=typed_query&f=live');
 return false;
 }
 
