@@ -192,13 +192,3 @@ $('#light').toggle();
 $('#dark').toggle();
 });
 });
-
-if(window.matchMedia('(prefers-color-scheme: light)').matches == true){
-$('#darkd').hide();
-$('#dark').hide();
-}
-
-if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
-$('#lightd').hide();
-$('#light').hide();
-}
