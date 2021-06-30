@@ -7,6 +7,19 @@ $('#dark').toggle();
 });
 });
 
+function ors() {
+var User = document.getElementById('or').value;document.getElementById('texta').value += " " + User + " ";
+}
+function ands() {
+var User = document.getElementById('and').value;document.getElementById('texta').value += " " + User + " ";
+}
+
+function clearTextarea() {
+var textclear = document.getElementById("texta");
+textclear.value = '';
+$('#output').text('');
+}
+
 $.fn.clickToggle = function (a, b) {
 return this.each(function () {
 var clicked = false;
@@ -172,19 +185,4 @@ var target = target.replace('#','%23');
 var target = target.replace('&','%26');
 $('#output').attr('href', 'https://www.google.com/search?q=' + target + '+ios&gl=us&hl=en#fpstate=aig');
 return false;
-}
-
-function ors() {
-var User = document.getElementById('or').value;document.getElementById('texta').value += " " + User + " ";
-}
-function ands() {
-var User = document.getElementById('and').value;document.getElementById('texta').value += " " + User + " ";
-}
-
-
-
-function clearTextarea() {
-var textclear = document.getElementById("texta");
-textclear.value = '';
-$('#output').text('');
 }
