@@ -7,7 +7,7 @@ $('#dark').toggle();
 });
 });
 
-function AddStringToTextarea() {
+function texta() {
 var areas = document.getElementById('texta').value;
 var aread = document.getElementById('texta');
 aread.value = areas + "\n" + aread.value;
