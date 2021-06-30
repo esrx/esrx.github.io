@@ -120,6 +120,13 @@ $('#dark').hide();
 if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
 $('#light').hide();
 }
+
+$(function () {
+$('#mode').on('click',()=>{
+$('#light').toggle();
+$('#dark').toggle();
+});
+});
 </script>
 <br>
 <a href="https://ads.twitter.com/mobile/v1/account"><img src="https://ton.twimg.com/dataproducts/devportalvnext/dist/c7514dde3c570787d4956a41d026c686.svg"></a>
