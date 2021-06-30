@@ -10,8 +10,8 @@ $('#dark').toggle();
 function hidaris() {
 var areas = document.getElementById('hidari').value;
 var aread = document.getElementById('texta');
-aread.value = areas + aread.value;
-var area = document.getElementById('migi').value;document.getElementById('texta').value += area ;
+aread.value = areas + " " + aread.value;
+var area = document.getElementById('migi').value;document.getElementById('texta').value += " " + area ;
 }
 
 function ors() {
