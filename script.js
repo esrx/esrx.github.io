@@ -7,11 +7,17 @@ $('#dark').toggle();
 });
 });
 
+function AddStringToTextarea() {
+var areas = document.getElementById('texta').value;
+var aread = document.getElementById('texta');
+TargetList.value = areas + "\n" + aread.value;
+}
+
 function ors() {
-var User = document.getElementById('or').value;document.getElementById('texta').value += " " + User + " ";
+var area = document.getElementById('or').value;document.getElementById('texta').value += " " + area + " ";
 }
 function ands() {
-var User = document.getElementById('and').value;document.getElementById('texta').value += " " + User + " ";
+var area = document.getElementById('and').value;document.getElementById('texta').value += " " + area + " ";
 }
 
 function clearTextarea() {
