@@ -1,5 +1,12 @@
 //index.HTML最下部のjsタグからこれが続いて処理が発生する
 
+$(function () {
+$('#mode').on('click',()=>{
+$('#light').toggle();
+$('#dark').toggle();
+});
+});
+
 $.fn.clickToggle = function (a, b) {
 return this.each(function () {
 var clicked = false;
