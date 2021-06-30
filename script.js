@@ -8,7 +8,7 @@ $('#dark').toggle();
 });
 
 function texta() {
-var areas = document.getElementById('(').value;
+var areas = document.getElementById('hidari').value;
 var aread = document.getElementById('texta');
 aread.value = areas + "\n" + aread.value;
 }
