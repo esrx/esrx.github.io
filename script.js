@@ -181,14 +181,3 @@ var textclear = document.getElementById("texta");
 textclear.value = '';
 $('#output').text('');
 }
-
-
-
-
-//ダークモード
-$(function () {
-$('#mode').on('click',()=>{
-$('#light').toggle();
-$('#dark').toggle();
-});
-});
