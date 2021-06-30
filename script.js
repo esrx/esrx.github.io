@@ -7,9 +7,9 @@ $('#dark').toggle();
 });
 });
 
-function texta() {
+function hidaris() {
 var areas = document.getElementById('hidari').value;
-var aread = document.getElementById('hidaris');
+var aread = document.getElementById('texta');
 aread.value = areas + "\n" + aread.value;
 }
 
