@@ -10,7 +10,7 @@ $('#dark').toggle();
 function AddStringToTextarea() {
 var areas = document.getElementById('texta').value;
 var aread = document.getElementById('texta');
-TargetList.value = areas + "\n" + aread.value;
+aread.value = areas + "\n" + aread.value;
 }
 
 function ors() {
