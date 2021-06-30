@@ -9,7 +9,7 @@ $('#dark').toggle();
 
 function texta() {
 var areas = document.getElementById('hidari').value;
-var aread = document.getElementById('texta');
+var aread = document.getElementById('hidaris');
 aread.value = areas + "\n" + aread.value;
 }
 
