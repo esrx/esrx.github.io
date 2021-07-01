@@ -97,7 +97,7 @@ content:"light";
 
 @media (prefers-color-scheme: dark) {
     body {
-    background-color: #292f33;
+    background-color: #23282f;
     }
     p {
     color:  white;
