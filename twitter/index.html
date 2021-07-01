@@ -17,7 +17,14 @@
 <form>
 <input type="text" style="width:90%;" class="inputs" placeholder="Access_token = request.args.get('oauth_token')">
 <input type="text" style="width:90%;" class="inputs" placeholder="Access_secret_token = request.args.get('oauth_verifier')">
-<input type="number" min="0" max="999">
+<select>
+<script>
+var i;
+for(i=10; i<100; i++){
+document.write('<option value="'+i+'">'+i+'歳です</option>');
+}
+</script>
+</select>
 <textarea id="texta" style="width:90%;height:100px;"></textarea>
 </form>
 <br>
