@@ -156,8 +156,8 @@ $('#language').clickToggle(function (){
    lang = "+-lang:" + select;
 });
 
-document.getElementById("setDate").onchange = function() { 
-    var date = document.getElementById("setDate").value;
+document.getElementById("today").onchange = function() { 
+    var date = document.getElementById("today").value;
     alert(date);
 };
 
