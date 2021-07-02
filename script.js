@@ -156,6 +156,12 @@ $('#language').clickToggle(function (){
    lang = "+-lang:" + select;
 });
 
+document.getElementById("setDate").onchange = function() { 
+    var date = document.getElementById("setDate").value;
+    alert(date);
+};
+
+
 $('#search').click( sample );
 function sample() {
 var target = $('#texta').val();
