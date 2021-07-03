@@ -15,13 +15,13 @@
 <img style="max-width:100%;height:auto;" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Twitter_logo.svg">
 <a href="/redirect"><img style="width:50%;" src="https://coderwall-assets-0.s3.amazonaws.com/uploads/picture/file/4347/twitter_button.png"></a>
 <form>
-<input type="text" style="width:90%;" class="inputs" placeholder="Access_token = request.args.get('oauth_token')">
-<input type="text" style="width:90%;" class="inputs" placeholder="Access_secret_token = request.args.get('oauth_verifier')">
+<input type="text" id="AT" style="width:90%;" class="inputs" placeholder="Access_token = request.args.get('oauth_token')">
+<input type="text" id="AS" style="width:90%;" class="inputs" placeholder="Access_secret_token = request.args.get('oauth_verifier')">
 <select>
 <script>
 var i;
 for(i=0; i<100; i++){
-document.write('<option max="100" value="'+i+'">'+i+'</option>');
+document.write('<option id="num" max="100" value="'+i+'">'+i+'</option>');
 }
 </script>
 </select>
