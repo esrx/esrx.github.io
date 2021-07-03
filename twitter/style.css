@@ -15,4 +15,8 @@ inputs::placeholder {
     p {
     color:  white;
     }
+    form {
+    background-color: #444444;
+    color:  white;
+    }
 }
