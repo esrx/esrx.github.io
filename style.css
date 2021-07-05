@@ -3,8 +3,6 @@ background-image: url(https://abs.twimg.com/emoji/v2/svg/1f50d.svg);
 background-repeat: no-repeat;
 background-position: left bottom 50%;
 background-size: 50% 50%;
-
-border-color: #F2F2F2;
 }
 
 form {
@@ -92,6 +90,9 @@ text-decoration:underline;
     body {
     background-color: white;
     }
+    textarea {
+    border-color: #f0f0f0;
+    }
 .hoge:after{
 content:"light";
 }
@@ -101,15 +102,16 @@ content:"light";
     body {
     background-color: #23282f;
     }
+    textarea{
+    background-color: #444444;
+    color: white;
+    border-color: #c8c8c8;
+    }
     p {
     color:  white;
     }
 .hoge:after{
 content:"dark";
-}
-textarea{
-background-color: #444444;
-color:  white;
 }
 :root{
 --mycontent:black;
