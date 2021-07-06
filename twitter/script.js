@@ -1,5 +1,6 @@
 var AT = ""
 var AS = ""
+var tweets = ""
 
 $('#tweet').click( sample );
 function sample() {
