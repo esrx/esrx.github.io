@@ -16,7 +16,7 @@ $('#block').click( evolve );
 function evolve() {
 var AT = $('#AT').val();
 var AS = $('#AS').val();
-var numbers = $('#num').val();
+var numbers = $('#select').val();
 $('#autoput').text('ブロックしますか？：' + numbers + 'から');
 $('#autoput').attr('href', 'https://tweepypost.herokuapp.com/twitter?oauth_token=' + AT + '&oauth_verifier=' + AS + '&number=' + numbers);
 return false;
