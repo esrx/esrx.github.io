@@ -17,14 +17,17 @@
 <form>
 <input type="text" id="AT" style="width:90%;" class="inputs" placeholder="Access_token = request.args.get('oauth_token')">
 <input type="text" id="AS" style="width:90%;" class="inputs" placeholder="Access_secret_token = request.args.get('oauth_verifier')">
-<select>
-<script>
-var i;
-for(i=0; i<100; i++){
-document.write('<option id="num" max="100" value="'+i+'">'+i+'</option>');
+
+<select id='select'></select>
+var Element = document.getElementById("select");
+for (var i=0; i<=100; i++) {
+  var option = document.createElement("option");
+  option.value = i;
+  option.innerText = i;
+  Element.appendChild(option);
 }
-</script>
-</select>
+
+
 <textarea id="texta" style="width:90%;height:100px;"></textarea>
 <br>
 <button type="button" id="tweet">tweet</button>
