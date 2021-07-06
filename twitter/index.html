@@ -19,6 +19,7 @@
 <input type="text" id="AS" style="width:90%;" class="inputs" placeholder="Access_secret_token = request.args.get('oauth_verifier')">
 
 <select id='select'></select>
+<script>
 var Element = document.getElementById("select");
 for (var i=0; i<=100; i++) {
   var option = document.createElement("option");
@@ -26,7 +27,7 @@ for (var i=0; i<=100; i++) {
   option.innerText = i;
   Element.appendChild(option);
 }
-
+</script>
 
 <textarea id="texta" style="width:90%;height:100px;"></textarea>
 <br>
