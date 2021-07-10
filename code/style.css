@@ -8,11 +8,11 @@ pre {
    width:100%;
    margin:1em 0;
    overflow-x:hidden;
-   overflow-y:hidden
+   overflow-y:hidden;
 }
 
 .press .wherecss{
-   background:#ffc778
+   background:#ffc778;
 }
 .btn{
    user-select:none;
@@ -24,5 +24,4 @@ pre {
    line-height:1em;
    padding:2px 5px;
    z-index:99999;
-   font-family:Arial,sans-serif
 }
