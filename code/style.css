@@ -1,7 +1,7 @@
 pre {
    overflow-x:scroll;
 }
-.fukipre {
+.pres {
    border-top:solid 1px #dadada;
    border-left:solid 1px #dadada;
    border-right:solid 1px #dadada;
@@ -11,7 +11,7 @@ pre {
    overflow-y:hidden
 }
 
-.fukipre .wherecss{
+.pres .wherecss{
    background:#ffc778
 }
 .btn{
