@@ -5,6 +5,7 @@ pre {
    border-top:solid 1px #dadada;
    border-left:solid 1px #dadada;
    border-right:solid 1px #dadada;
+   border-bottom:solid 1px #dadada;
    width:100%;
    margin:1em 0;
 }
