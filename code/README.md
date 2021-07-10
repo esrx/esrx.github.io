@@ -21,6 +21,7 @@ var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
         //処理内容
+        $(".btn").text('copy');
     });
     clipboard.on('error', function(e) {
         //エラー時の処理
