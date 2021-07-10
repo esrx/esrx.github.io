@@ -4,7 +4,7 @@ https://esrx.github.io/code
 ```
 https://fontawesome.com/v4.7/icons
 ```
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 ```
 <a href="https://icons.getbootstrap.com/"/><img src="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"></a>
 ```
