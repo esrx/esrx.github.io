@@ -1,5 +1,6 @@
 pre {
    overflow-x:scroll;
+   scrollbar-color: auto;
 }
 .press {
    border-top:solid 1px #dadada;
