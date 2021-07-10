@@ -56,7 +56,9 @@
 <script>
 var clipboard = new ClipboardJS('.btn');
     clipboard.on('success', function(e) {
-        $(".btn").text('copy'); 
+        let element = $('i');
+        element.removeClass('fa fa-clipboard')
+        element.addClass('fa fa-files-o');
     });
 </script>
 <script src="script.js"></script>
