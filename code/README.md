@@ -5,7 +5,7 @@ https://esrx.github.io/code
 ```
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
 ```
-<a href="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg"></a>
+<img src="https://getbootstrap.com/docs/5.0/assets/img/favicons/safari-pinned-tab.svg">
 ```
 <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
 ```
