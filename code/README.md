@@ -16,7 +16,7 @@ var clipboard = new ClipboardJS('.btn');
         //処理内容
     });
     clipboard.on('error', function(e) {
-    //エラー時の処理
+        //エラー時の処理
     });
 ```
 https://clipboardjs.com/#events  
