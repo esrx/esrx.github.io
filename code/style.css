@@ -5,15 +5,11 @@ pre {
    border-top:solid 1px #dadada;
    border-left:solid 1px #dadada;
    border-right:solid 1px #dadada;
-   border-bottom:solid 1px #dadada;
+   border-bottom:solid 0px #dadada;
    width:30%;
-   margin:1em 0;
 }
 
-.press .wherecss{
-   background:#ffc778;
-}
-.btn{
+.btn {
    user-select:none;
    -ms-user-select:none;
    font-size:12px;
