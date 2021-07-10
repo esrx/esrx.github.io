@@ -11,5 +11,5 @@
 ```
 
 
-https://clipboardjs.com/#events
+https://clipboardjs.com/#events  
 コピペCDNと出力HTMLでコード自動生成
