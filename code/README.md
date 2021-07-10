@@ -10,6 +10,14 @@
 <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
 ```
 
-
+```
+var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function(e) {
+        //処理内容
+    });
+    clipboard.on('error', function(e) {
+    //エラー時の処理
+    });
+```
 https://clipboardjs.com/#events  
 コピペCDNと出力HTMLでコード自動生成
