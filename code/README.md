@@ -12,10 +12,11 @@
 
 ```
 var clipboard = new ClipboardJS('.btn');
-    clipboard.on('success', function(e) {
+
+   clipboard.on('success', function(e) {
         //処理内容
     });
-    clipboard.on('error', function(e) {
+   clipboard.on('error', function(e) {
         //エラー時の処理
     });
 ```
