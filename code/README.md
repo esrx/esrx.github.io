@@ -9,4 +9,7 @@
 ```
 <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
 ```
+
+
+https://clipboardjs.com/#events
 コピペCDNと出力HTMLでコード自動生成
