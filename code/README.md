@@ -1,7 +1,4 @@
 ```
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-```
-```
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" rel="stylesheet">
 ```
 ```
@@ -9,6 +6,10 @@
 ```
 ```
 <script defer src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+```
+
+```
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 ```
 
 ```
