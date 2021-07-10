@@ -2,7 +2,7 @@ https://esrx.github.io/code
 ```
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" rel="stylesheet">
 ```
-https://fontawesome.com/v4.7/icons/
+https://fontawesome.com/v4.7/icons
 ```
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
 ```
