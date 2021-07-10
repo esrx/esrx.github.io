@@ -3,6 +3,7 @@ pre {
    scrollbar-color: auto;
 }
 .press {
+   font-size: 5%;
    border-top:solid 1px #dadada;
    border-left:solid 1px #dadada;
    border-right:solid 1px #dadada;
