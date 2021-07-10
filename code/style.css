@@ -1,0 +1,25 @@
+.fukipre {
+border-top:solid 1px #dadada;
+border-left:solid 1px #dadada;
+border-right:solid 1px #dadada;
+width:100%;
+margin:1em 0;
+overflow-x:hidden;
+overflow-y:hidden
+}
+
+.fukipre .wherecss{
+background:#ffc778
+}
+.where{
+user-select:none;
+-ms-user-select:none;
+font-size:12px;
+position:absolute;
+background:#668ad8;
+color:#fff;
+line-height:1em;
+padding:2px 5px;
+z-index:99999;
+font-family:Arial,sans-serif
+}
