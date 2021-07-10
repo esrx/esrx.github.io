@@ -13,6 +13,9 @@
 ```
 
 ```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+```
+```
 var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
