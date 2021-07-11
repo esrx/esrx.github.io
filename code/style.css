@@ -10,6 +10,10 @@ form {
    margin: auto;
 }
 
+code {
+   font-family:Consolas,monospace;
+}
+
 pre::-webkit-scrollbar{height:10px;}
 pre::-webkit-scrollbar-track{background:#dddddd;}
 pre::-webkit-scrollbar-thumb{background:#2cc2e4;}
@@ -18,6 +22,8 @@ pre::-webkit-scrollbar-thumb{background:#2cc2e4;}
    overflow-x:scroll;
    scrollbar-color: black;
 }
+
+
 
 .press {
    position: relative;
