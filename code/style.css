@@ -10,6 +10,10 @@ form {
    margin: auto;
 }
 
+pre {
+   font-family:Consolas,monospace;
+}
+
 .scroll {
    overflow-x:scroll;
 }
@@ -21,7 +25,6 @@ form {
 .press {
    position: relative;
    font-size: 7px;
-   font-family:Consolas,monospace;
    background-color: #dadada;
    border-top:solid 1px #dadada;
    border-left:solid 1px #dadada;
