@@ -11,13 +11,14 @@ pre {
    border-bottom:solid 1px #dadada;
    padding-bottom: 0px; 
    width:25%;
+   position: relative;
 }
 
 .btn {
    user-select:none;
    -ms-user-select:none;
    font-size:12px;
-   position:relative;right:0;
+   position:absolute;right:0;
    background:#668ad8;
    color:#fff;
    line-height:1em;
