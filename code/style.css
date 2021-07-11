@@ -31,7 +31,6 @@ pre::-webkit-scrollbar-thumb{background:#2cc2e4;}
    border-bottom:solid 1px #dadada;
    padding-bottom: 0px; 
    width:25%;
-   position: relative;
 }
 
 .btn {
