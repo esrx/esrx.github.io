@@ -1,8 +1,8 @@
-textarea{
-background-image: url(https://abs.twimg.com/emoji/v2/svg/2328.svg);
-background-repeat: no-repeat;
-background-position: left bottom 50%;
-background-size: 50% 50%;
+textarea {
+   background-image: url(https://abs.twimg.com/emoji/v2/svg/2328.svg);
+   background-repeat: no-repeat;
+   background-position: left bottom 50%;
+   background-size: 50% 50%;
 }
 
 pre {
