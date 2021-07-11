@@ -10,14 +10,13 @@ form {
    margin: auto;
 }
 
-pre::-webkit-scrollbar{height:10px;}
-pre::-webkit-scrollbar-track{background:#dddddd;}
-pre::-webkit-scrollbar-thumb{background:#2cc2e4;}
-
 .scroll {
    overflow-x:scroll;
-   scrollbar-color: black;
 }
+.scroll::-webkit-scrollbar{height:10px;}
+.scroll::-webkit-scrollbar-track{background:#dddddd;}
+.scroll::-webkit-scrollbar-thumb{background:#2cc2e4;}
+
 
 .press {
    position: relative;
