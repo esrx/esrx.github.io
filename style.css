@@ -98,7 +98,7 @@ text-decoration:underline;
     background-color: white;
     }
     textarea {
-    border-color: #f0f0f0;
+    border-color: #dadada;
     }
 .hoge:after{
 content:"light";
@@ -112,7 +112,7 @@ content:"light";
     textarea{
     background-color: #444444;
     color: white;
-    border-color: #444c55;
+    border-color: #dadada;
     }
     p {
     color:  white;
