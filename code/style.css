@@ -3,6 +3,9 @@ textarea {
    background-repeat: no-repeat;
    background-position: left bottom 50%;
    background-size: 50% 50%;
+
+   text-align: center;
+   margin: auto;
 }
 
 pre {
