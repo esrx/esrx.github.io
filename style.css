@@ -86,6 +86,13 @@ text-decoration:underline;
 }
 
 
+.scs {
+   border-top:solid 1px #dadada;
+   border-left:solid 1px #dadada;
+   border-right:solid 1px #dadada;
+   border-bottom:solid 1px #dadada;
+}
+
 @media (prefers-color-scheme: light) {
     body {
     background-color: white;
