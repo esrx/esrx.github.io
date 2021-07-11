@@ -10,7 +10,6 @@ form {
 }
 
 pre {
-   overflow-x:scroll;
    scrollbar-color: black;
 }
 
@@ -19,6 +18,7 @@ pre::-webkit-scrollbar-track{background:#dddddd;}
 pre::-webkit-scrollbar-thumb{background:#2cc2e4;}
 
 .press {
+   overflow-x:scroll;
    background-color: #dadada;
    font-size: 7px;
    border-top:solid 1px #dadada;
