@@ -17,12 +17,10 @@ pre {
    user-select:none;
    -ms-user-select:none;
    font-size:12px;
-   position:absolute;
+   position:absolute;right:0;
    background:#668ad8;
    color:#fff;
    line-height:1em;
    padding:2px 5px;
    z-index:99999;
-   display: flex;
-   justify-content: flex-end;
 }
