@@ -91,6 +91,7 @@ text-decoration:underline;
    border-left:solid 1px #dadada;
    border-right:solid 1px #dadada;
    border-bottom:solid 1px #dadada;
+   background-position: left bottom 50%;
 }
 
 @media (prefers-color-scheme: light) {
