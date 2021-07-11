@@ -46,6 +46,22 @@
 &lt;/head&gt;
 &lt;body&gt;</code></pre></div></div>
 
+<div class="press" style="float:left;">
+<span class="ctn">script.js</span>
+<span class="btn" data-clipboard-text="
+
+"><i class="fa fa-file-text-o"></i></span><div class="scroll"><pre><code>$.fn.clickToggle = function (a, b) {
+return this.each(function () {
+var clicked = false;
+$(this).on('click', function () {
+clicked = !clicked;
+if (clicked) {
+return a.apply(this, arguments);
+}
+return b.apply(this, arguments);
+});
+});
+};</code></pre></div></div>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
