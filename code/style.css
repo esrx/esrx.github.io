@@ -23,6 +23,7 @@ pre::-webkit-scrollbar-thumb{background:#2cc2e4;}
 }
 
 .press {
+   position: relative;
    background-color: #dadada;
    font-size: 7px;
    border-top:solid 1px #dadada;
@@ -34,10 +35,10 @@ pre::-webkit-scrollbar-thumb{background:#2cc2e4;}
 }
 
 .btn {
+   position:absolute;right:0;
    user-select:none;
    -ms-user-select:none;
    font-size:12px;
-   position:absolute;right:0;
    color:#768390;
    line-height:1em;
    padding:2px 5px;
