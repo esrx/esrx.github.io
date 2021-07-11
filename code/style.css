@@ -12,6 +12,7 @@ form {
 
 code {
    font-family:Consolas,monospace;
+   font-size: 5px;
 }
 
 pre::-webkit-scrollbar{height:10px;}
@@ -28,7 +29,6 @@ pre::-webkit-scrollbar-thumb{background:#2cc2e4;}
 .press {
    position: relative;
    background-color: #dadada;
-   font-size: 7px;
    border-top:solid 1px #dadada;
    border-left:solid 1px #dadada;
    border-right:solid 1px #dadada;
