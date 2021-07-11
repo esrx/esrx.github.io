@@ -3,7 +3,8 @@ textarea {
    background-repeat: no-repeat;
    background-position: left bottom 50%;
    background-size: 50% 50%;
-
+}
+form {
    text-align: center;
    margin: auto;
 }
