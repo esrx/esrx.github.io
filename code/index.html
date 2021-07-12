@@ -68,6 +68,8 @@
 <script>
 var clipboard = new ClipboardJS('.btn');
     clipboard.on('success', function(e) {
+        var className = document.getElementsByClassName("btn");
+        for(var i=0; i<className.length; i++) {
         $(".btn").removeClass('fa fa-file-text-o')
         $(".btn").addClass('fa fa-check-square-o');
         setTimeout(() => {
