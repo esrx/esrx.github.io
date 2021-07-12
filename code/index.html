@@ -82,6 +82,7 @@ var clipboard = new ClipboardJS('.btn');
     }
     clipboard.on('success', function(e) {
     showTooltip(e.trigger);
+    elem.setAttribute('class','btn fa fa-file-text-o');
 });
 
 </script>
