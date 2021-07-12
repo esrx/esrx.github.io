@@ -67,6 +67,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 <script>
 let clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function(e) {
     let btns = document.querySelectorAll('.btn');
     for(let i=0; i<btns.length; i++){
     btns[i].addEventListener('mouseleave',clearTooltip);
@@ -75,7 +76,7 @@ let clipboard = new ClipboardJS('.btn');
     function clearTooltip(e){
         e.currentTarget.setAttribute('class','btn fa fa-check-square-o');
     }
-    clipboard.on('success', function(e) {
+
         showTooltip(e.trigger);
         function showTooltip(elem){
              elem.setAttribute('class','btn fa fa-check-square-o');
