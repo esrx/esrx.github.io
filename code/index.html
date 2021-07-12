@@ -68,7 +68,8 @@
 <script>
 var clipboard = new ClipboardJS('.btn');
     clipboard.on('success', function(e) {
-        alert(e.text + 'をコピーしたよ');
+        const title = e.trigger.dataset.clipboardTitle;
+        alert(title + 'をコピーしたよ');
     });
 </script>
 <script src="script.js"></script>
