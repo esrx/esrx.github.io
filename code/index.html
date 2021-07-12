@@ -68,6 +68,8 @@
 <script>
 let clipboard = new ClipboardJS('.btn');
     clipboard.on('success', function(e) {
+    showTooltip(e.trigger);
+
     let btns = document.querySelectorAll('.btn');
     for(let i=0; i<btns.length; i++){
     btns[i].addEventListener('mouseleave',clearTooltip);
@@ -77,7 +79,6 @@ let clipboard = new ClipboardJS('.btn');
         e.currentTarget.setAttribute('class','btn fa fa-check-square-o');
     }
 
-        showTooltip(e.trigger);
         function showTooltip(elem){
              elem.setAttribute('class','btn fa fa-check-square-o');
              setTimeout(()=>{
