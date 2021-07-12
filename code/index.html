@@ -79,8 +79,9 @@ let clipboard = new ClipboardJS('.btn');
         showTooltip(e.trigger);
         function showTooltip(elem){
              elem.setAttribute('class','btn fa fa-check-square-o');
-             setTimeout(() => {
-             elem.classList.add('btn fa fa-file-text-o');
+             setTimeout(()=>{
+             elem.setAttribute('class','btn fa fa-file-text-o');
+             
              },1500);
         }
     });
