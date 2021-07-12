@@ -68,11 +68,11 @@
 <script>
 var clipboard = new ClipboardJS('.btn');
     clipboard.on('success', function(e) {
-        $(".btn",this).removeClass('fa fa-file-text-o')
-        $(".btn",this).addClass('fa fa-check-square-o');
+        $(".btn").removeClass('fa fa-file-text-o')
+        $(".btn").addClass('fa fa-check-square-o');
         setTimeout(() => {
-             $(".btn",this).removeClass('fa fa-check-square-o')
-             $(".btn",this).addClass('fa fa-file-text-o');
+             $(".btn").removeClass('fa fa-check-square-o')
+             $(".btn").addClass('fa fa-file-text-o');
         }, 1500);
     });
 </script>
