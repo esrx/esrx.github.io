@@ -71,4 +71,7 @@ pre {
     p {
     color: white;
     }
+    .press {
+    background-color: #444444;
+    }
 }
