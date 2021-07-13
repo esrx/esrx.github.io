@@ -1,4 +1,4 @@
-var ="";
+var target = "";
 
 $('#inputid').click( sample );
 function sample() {
