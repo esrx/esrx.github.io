@@ -1,8 +1,9 @@
-textarea{
+textarea {
 background-image: url(https://abs.twimg.com/emoji/v2/svg/1f50d.svg);
 background-repeat: no-repeat;
 background-position: right bottom 50%;
 background-size: 50% 50%;
+border-color: #dadada;
 }
 
 form {
@@ -99,9 +100,6 @@ text-decoration:underline;
     body {
     background-color: white;
     }
-    textarea {
-    border-color: #dadada;
-    }
 .hoge:after{
 content:"light";
 }
@@ -114,7 +112,6 @@ content:"light";
     textarea{
     background-color: #444444;
     color: white;
-    border-color: #dadada;
     }
     p {
     color: white;
