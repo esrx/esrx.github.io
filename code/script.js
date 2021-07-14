@@ -1,7 +1,3 @@
-var tex1 = "";
-var tex2 = "";
-var tex3 = "";
-
 $('#inputid').click( sample );
 function sample() {
     var tex1 = $('#texta1').val();
