@@ -3,8 +3,9 @@ function sample() {
     var tex1 = $('#texta1').val();
     var tex2 = $('#texta2').val();
     var tex3 = $('#texta3').val();
-    var tex4 = tex2 + 'submit';
-    $('#output').text( '\n' + '<input id="' + tex1 + '" placeholder="' + tex2 + '" style="' + tex3 + '"></input>' + '\n' + '<button  id="' + tex4 + '">送信</button>');
+    var tex4 = tex1 + 'submit';
+    var tex6 = tex1 + 'output';
+    $('#output').text( '\n' + '<input id="' + tex1 + '" placeholder="' + tex2 + '" style="' + tex3 + '"></input>' + '\n' + '<button  id="' + tex4 + '">送信</button>' + '\n' + '<p id="' + tex6 + '"></p>');
     var tex5 = tex1 + '0';
     var str = tex1;
     var strHead  = str.slice( 0, 3 );
