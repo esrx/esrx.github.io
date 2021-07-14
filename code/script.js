@@ -10,5 +10,5 @@ function sample() {
     var str = tex1;
     var strHead  = str.slice( 0, 3 );
     var strHead1 = strHead + '1';
-    $('#autoput').text('$(\'#' + tex4 + '\').click( ' + tex5 + ' );' + '\n' + 'function ' + tex5 + '() {' + '\n' + '    var ' + strHead1 + ' = $(\'' + tex1 + '\').val();' + '\n' + '$(\'#' + tex6 + '\').text( ' + strHead1 + ' );' + '\n}');
+    $('#autoput').text('$(\'#' + tex4 + '\').click( ' + tex5 + ' );' + '\n' + 'function ' + tex5 + '() {' + '\n' + '    var ' + strHead1 + ' = $(\'#' + tex1 + '\').val();' + '\n' + '$(\'#' + tex6 + '\').text( ' + strHead1 + ' );' + '\n}');
 }
