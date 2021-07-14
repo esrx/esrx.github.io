@@ -47,9 +47,6 @@ pre {
     body {
     background-color: white;
     }
-    textarea {
-    border-color: #dadada;
-    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,7 +55,6 @@ pre {
     }
     textarea{
     background-color: #444444;
-    border-color: #dadada;
     color: white;
     }
     p {
