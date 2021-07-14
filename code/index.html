@@ -14,7 +14,7 @@
 
 <div class="press" style="float:left;">
 <span class="ctn">index.html</span>
-<span class="btn fa fa-file-text-o" data-clipboard-text="&lt;!DOCTYPE html&gt;
+<span class="btn fa fa-file-text-o fa-lg" data-clipboard-text="&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot;&gt;
 &lt;head&gt;
@@ -48,7 +48,7 @@
 
 <div class="press" style="float:left;">
 <span class="ctn">script.js</span>
-<span class="btn fa fa-file-text-o" data-clipboard-text="
+<span class="btn fa fa-file-text-o fa-lg" data-clipboard-text="
 
 "></span><div class="scroll"><pre><code>$.fn.clickToggle = function (a, b) {
    return this.each(function () {
@@ -65,7 +65,7 @@
 
 <div class="press" style="float:left;">
 <span class="ctn">style.css</span>
-<span class="btn fa fa-file-text-o" data-clipboard-text="@media (prefers-color-scheme: light) {
+<span class="btn fa fa-file-text-o fa-lg" data-clipboard-text="@media (prefers-color-scheme: light) {
     body {
     background-color: white;
     }
@@ -125,13 +125,13 @@ let clipboard = new ClipboardJS('.btn');
     }
 
     function clearTooltip(e){
-        e.currentTarget.setAttribute('class','btn fa fa-file-text-o');
+        e.currentTarget.setAttribute('class','btn fa fa-file-text-o fa-lg');
     }
 
         function showTooltip(elem){
-             elem.setAttribute('class','btn fa fa-check-square-o');
+             elem.setAttribute('class','btn fa fa-check-square-o fa-lg');
              setTimeout(()=>{
-             elem.setAttribute('class','btn fa fa-file-text-o');       
+             elem.setAttribute('class','btn fa fa-file-text-o fa-lg');       
              },1500);
         }
     });  
