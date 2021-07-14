@@ -10,18 +10,6 @@ form {
    margin: auto;
 }
 
-pre {
-   font-family:-apple-system,'BlinkMacSystemFont',Sans-Serif;
-}
-
-.scroll {
-   overflow-x:scroll;
-}
-.scroll::-webkit-scrollbar{height:10px;}
-.scroll::-webkit-scrollbar-track{background:#dddddd;}
-.scroll::-webkit-scrollbar-thumb{background:#2cc2e4;}
-
-
 .press {
    position: relative;
    font-size: 6.5px;
@@ -47,6 +35,13 @@ pre {
    position:absolute;left:41%;
 }
 
+.scroll {
+   overflow-x:scroll;
+}
+
+pre {
+   font-family:-apple-system,'BlinkMacSystemFont',Sans-Serif;
+}
 
 @media (prefers-color-scheme: light) {
     body {
