@@ -20,3 +20,6 @@ for (var i=0; i<=100; i++) {
 }
 </script>
 ```
+```
+var numbers = $('#select').val();
+```
