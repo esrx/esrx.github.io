@@ -32,5 +32,41 @@ var clipboard = new ClipboardJS('.btn');
         //エラー時の処理
     });
 ```
-https://clipboardjs.com/#events  
+https://clipboardjs.com/#events
+
+
+```
+<input id="input_copy"></input>
+<button id="input_copysubmit">送信</button>
+<p id="input_copyoutput">あ</p>
+<button id="btn_copy">Copy</button>
+```
+```
+$('#input_copysubmit').click( inpu );
+function inpu() {
+    var inp1 = $('#input_copy').val();
+$('#input_copyoutput').text( inp1 );
+}
+
+function txtCopy() {
+    const target = document.getElementById('input_copy');
+    if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+        target.readOnly = false;
+        const range = document.createRange();
+        range.selectNode(target);
+
+window.getSelection().addRange(range);
+    document.execCommand('copy');
+    } else {
+         target.select();
+         document.execCommand('copy');
+    }
+    inp1.readOnly = true;
+    alert("text copied!!");
+}
+const trg = document.getElementById('btn_copy');
+trg.addEventListener('click',txtCopy);
+```
+バブリングフェーズ
+
 コピペCDNと出力HTMLでコード自動生成
