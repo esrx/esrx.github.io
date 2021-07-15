@@ -49,7 +49,7 @@ $('#input_copyoutput').text( inp1 );
 }
 
 function txtCopy() {
-    const target = document.getElementById('input_copy');
+    const target = document.getElementById('input_copyoutput');
     if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
         target.readOnly = false;
         const range = document.createRange();
@@ -61,7 +61,6 @@ window.getSelection().addRange(range);
          target.select();
          document.execCommand('copy');
     }
-    inp1.readOnly = true;
     alert("text copied!!");
 }
 const trg = document.getElementById('btn_copy');
