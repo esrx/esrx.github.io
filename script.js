@@ -183,7 +183,7 @@ function txtCopy() {
     if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
         etarget.readOnly = false;
         const range = document.createRange();
-        range.selectNode(target);
+        range.selectNode(etarget);
         window.getSelection().addRange(range);
         document.execCommand('copy');
     } else {
