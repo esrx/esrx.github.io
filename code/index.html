@@ -104,6 +104,16 @@
 <textarea id="texta1" placeholder="id" style="float:left;width:10%;"></textarea>
 <textarea id="texta2" placeholder="placeholder" style="float:left;width:10%;"></textarea>
 <textarea id="texta3" placeholder="style" style="float:left;width:10%;"></textarea>
+<select id='select'></select>
+<script>
+var Element = document.getElementById("select");
+for (var i=0; i<=100; i++) {
+   var option = document.createElement("option");
+   option.value = i;
+   option.innerText = i;
+   Element.appendChild(option);
+}
+</script>
 <button id="inputid">送信</button>
 <br>
 <div class="press" style="clear:both;float:left;">
