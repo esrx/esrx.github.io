@@ -54,12 +54,11 @@ function txtCopy() {
         target.readOnly = false;
         const range = document.createRange();
         range.selectNode(target);
-
-window.getSelection().addRange(range);
-    document.execCommand('copy');
+        window.getSelection().addRange(range);
+        document.execCommand('copy');
     } else {
-         target.select();
-         document.execCommand('copy');
+        target.select();
+        document.execCommand('copy');
     }
     alert("text copied!!");
 }
