@@ -26,20 +26,7 @@ var textclear = document.getElementById("texta");
 textclear.value = '';
 $('#output').text('');
 $('#input_copyoutput').text('');
-    const starget = document.getElementById('texta');
-    if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
-        etarget.readOnly = false;
-        const range = document.createRange();
-        range.selectNode(etarget);
-        window.getSelection().addRange(range);
-        document.execCommand('copy');
-    } else {
-        etarget.select();
-        document.execCommand('copy');
-    }
 }
-const trg = document.getElementById('delete');
-trg.addEventListener('click',clearTextarea);
 
 $.fn.clickToggle = function (a, b) {
 return this.each(function () {
