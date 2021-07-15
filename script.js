@@ -38,8 +38,8 @@ $('#input_copyoutput').text('');
         document.execCommand('copy');
     }
 }
-const trg = document.getElementById('btn_copy');
-trg.addEventListener('click',txtCopy);
+const trg = document.getElementById('delete');
+trg.addEventListener('click',clearTextarea);
 
 $.fn.clickToggle = function (a, b) {
 return this.each(function () {
