@@ -126,4 +126,5 @@ content:"dark";
 
 .scroll {
    overflow-x:scroll;
+   white-space: nowrap;
 }
