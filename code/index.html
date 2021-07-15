@@ -147,13 +147,13 @@ let clipboard = new ClipboardJS('.btn');
         e.currentTarget.setAttribute('class','btn fa fa-file-text-o fa-lg');
     }
 
-        function showTooltip(elem){
-             elem.setAttribute('class','btn fa fa-check-square-o fa-lg');
-             setTimeout(()=>{
-             elem.setAttribute('class','btn fa fa-file-text-o fa-lg');       
-             },1500);
-        }
-    });  
+    function showTooltip(elem){
+        elem.setAttribute('class','btn fa fa-check-square-o fa-lg');
+        setTimeout(()=>{
+        elem.setAttribute('class','btn fa fa-file-text-o fa-lg');       
+        },1500);
+    }
+});  
 </script>
 <script src="script.js"></script>
 </html>
