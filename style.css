@@ -124,13 +124,13 @@ content:"dark";
 }
 }
 
-.scroll {
-   overflow-x:scroll;
-   white-space: nowrap;
-}
-
-.timeline {
+@media screen and (max-width:900px) .timeline {
   overflow: hidden;
   margin-top: 23px;
   border-radius: 5px;
+}
+
+.scroll {
+   overflow-x:scroll;
+   white-space: nowrap;
 }
