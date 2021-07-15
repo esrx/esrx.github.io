@@ -179,15 +179,15 @@ return false;
 }
 
 function txtCopy() {
-    const target = document.getElementById('input_copyoutput');
+    const etarget = document.getElementById('input_copyoutput');
     if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
-        target.readOnly = false;
+        etarget.readOnly = false;
         const range = document.createRange();
         range.selectNode(target);
         window.getSelection().addRange(range);
         document.execCommand('copy');
     } else {
-        target.select();
+        etarget.select();
         document.execCommand('copy');
     }
     alert("text copied!!");
