@@ -25,6 +25,7 @@ function clearTextarea() {
 var textclear = document.getElementById("texta");
 textclear.value = '';
 $('#output').text('');
+$('#input_copyoutput').text('');
 }
 
 $.fn.clickToggle = function (a, b) {
