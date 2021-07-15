@@ -176,8 +176,8 @@ var target = target.replace(/&/g,'%26');
 var exesearch = target + lang + repl + quot + card + link + hash + choi + butt + sour + name;
 $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typed_query&f=live');
 var result = unescape( exesearch );
-var result = result.replace(/+/g,' ');
-$('#input_copyoutput').text(result);
+var eresult = result.replace(/+/g,'\s');
+$('#input_copyoutput').text( eresult );
 return false;
 }
 
