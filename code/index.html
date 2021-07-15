@@ -139,17 +139,17 @@ let clipboard = new ClipboardJS('.btn');
     showTooltip(e.trigger);
 
     let btns = document.querySelectorAll('.btn');
-    for(let i=0; i<btns.length; i++){
+    for(let i=0; i<btns.length; i++) {
     btns[i].addEventListener('mouseleave',clearTooltip);
     }
 
-    function clearTooltip(e){
+    function clearTooltip(e) {
         e.currentTarget.setAttribute('class','btn fa fa-file-text-o fa-lg');
     }
 
-    function showTooltip(elem){
+    function showTooltip(elem) {
         elem.setAttribute('class','btn fa fa-check-square-o fa-lg');
-        setTimeout(()=>{
+        setTimeout(()=> {
         elem.setAttribute('class','btn fa fa-file-text-o fa-lg');       
         },1500);
     }
