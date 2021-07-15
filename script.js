@@ -175,7 +175,7 @@ var target = target.replace(/#/g,'%23');
 var target = target.replace(/&/g,'%26');
 var exesearch = target + lang + repl + quot + card + link + hash + choi + butt + sour + name;
 $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typed_query&f=live');
-var starget = exesearch.replace(/%2B/g,' ');
+var starget = exesearch.replace(/+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
 return false;
