@@ -123,3 +123,7 @@ content:"dark";
 --mycontent:black;
 }
 }
+
+.scroll {
+   overflow-x:scroll;
+}
