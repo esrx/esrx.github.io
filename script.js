@@ -190,7 +190,7 @@ function txtCopy() {
         etarget.select();
         document.execCommand('copy');
     }
-    alert("text copied!!");
+    document.getElementById("btn_copy").innerText = "end";
 }
 const trg = document.getElementById('btn_copy');
 trg.addEventListener('click',txtCopy);
