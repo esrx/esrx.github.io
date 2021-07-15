@@ -178,6 +178,16 @@ $('#input_copyoutput').text(exesearch);
 return false;
 }
 
+function txtCopy() {
+document.getElementById('input_copyoutput');
+const range = document.createRange();
+range.selectNode(target);
+    window.getSelection().addRange(range);
+    document.execCommand('copy');
+}
+const trg = document.getElementById('btn_copy');
+trg.addEventListener('click',txtCopy);
+
 $('#tweet').click( tensio );
 function tensio() {
 var target = $('#texta').val();
