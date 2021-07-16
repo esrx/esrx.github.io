@@ -187,7 +187,7 @@ $('#input_copyoutput').text( result );
 $('#btn_copy').text('Copy');
 $('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target );
 $('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
-$('#lightdack').attr('href', 'https://duckduckgo.com/?q=' + target + '＆k9=1558d5');
+$('#lightdack').attr('href', 'https://duckduckgo.com/?q=' + target + '&k9=1558d5');
 return false;
 }
 
