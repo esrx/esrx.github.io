@@ -66,5 +66,8 @@ const trg = document.getElementById('btn_copy');
 trg.addEventListener('click',txtCopy);
 ```
 バブリングフェーズ
+```
+navigator.clipboard.writeText("");
+```
 
 コピペCDNと出力HTMLでコード自動生成
