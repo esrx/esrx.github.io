@@ -55,6 +55,7 @@ var quot = "";
 var link = "";
 var hash = "";
 var sour = "";
+var langs = "";
 
 $('#bot').clickToggle(function (){
    $(this).next('.target');
@@ -150,12 +151,12 @@ $('#language').clickToggle(function (){
    $(this).next('.target');
    $("#language").html('📘lang');
    var select = $("#lang").val();
-   lang = "+lang:" + select;
+   langs = "+lang:"
 }, function (){
    $(this).next('.target');
    $("#language").html('📕lang');
    var select = $("#lang").val();
-   lang = "+-lang:" + select;
+   langs = "+-lang:"
 });
 
 document.getElementById("today").onchange = function() { 
@@ -173,6 +174,11 @@ var target = target.replace(/\s\s/g,'+');
 var target = target.replace(/\s/g,'+');
 var target = target.replace(/#/g,'%23');
 var target = target.replace(/&/g,'%26');
+var select = $("#lang").val();
+var lang = langs + select;
+if (lang === 'und') {
+    var lang = "";
+}
 var exesearch = target + lang + repl + quot + card + link + hash + choi + butt + sour + name;
 $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typed_query&f=live');
 var starget = exesearch.replace(/\+/g,' ');
