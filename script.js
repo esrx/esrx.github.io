@@ -26,7 +26,6 @@ var textclear = document.getElementById("texta");
 textclear.value = '';
 $('#output').text('');
 $('#input_copyoutput').text('');
-navigator.clipboard.writeText("");
 }
 
 $.fn.clickToggle = function (a, b) {
