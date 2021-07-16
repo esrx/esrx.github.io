@@ -185,6 +185,7 @@ var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
 return false;
+document.getElementById("btn_copy").innerText = "Copy";
 }
 
 function txtCopy() {
