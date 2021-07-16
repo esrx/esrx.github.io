@@ -183,8 +183,8 @@ $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typ
 var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
+$('#btn_copy').text('Copy');
 return false;
-document.getElementById("btn_copy").innerText = "Copy";
 }
 
 function txtCopy() {
