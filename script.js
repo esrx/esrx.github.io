@@ -185,8 +185,8 @@ var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
 $('#btn_copy').text('Copy');
-$('#lightd').attr('href', 'https://www.google.co.jp/search?q=' + target );
-$('#darkd').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
+$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target );
+$('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
 return false;
 }
 
