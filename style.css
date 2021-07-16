@@ -8,14 +8,14 @@ font-size: 0.9em;
 }
 
 form {
-text-align: center;
 margin: auto;
-vertical-align: middle;
+text-align: center;
 }
 
 .google {
-text-align: center;
 margin: auto;
+text-align: center;
+vertical-align: middle;
 }
 
 button.ja{
