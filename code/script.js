@@ -12,3 +12,9 @@ function sample() {
     var strHead1 = strHead + '1';
     $('#autoput').text('$(\'#' + tex4 + '\').click( ' + tex5 + ' );' + '\n' + 'function ' + tex5 + '() {' + '\n' + '    var ' + strHead1 + ' = $(\'#' + tex1 + '\').val();' + '\n' + '$(\'#' + tex6 + '\').text( ' + strHead1 + ' );' + '\n}');
 }
+
+$('#linksubmit').click( link0 );
+function link0() {
+    var lin1 = $('#link').val();
+$('#linkoutput').text( '@app.route("/' + lin1 + '")' + '\n' + 'def apps():');
+}
