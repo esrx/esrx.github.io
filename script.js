@@ -232,6 +232,6 @@ var target = target.replace('%','%25');
 var target = target.replace('+','%20');
 var target = target.replace('#','%23');
 var target = target.replace('&','%26');
-$('#output').attr('href', 'https://www.google.com/search?q=' + target + '+ios#fpstate=aig');
+$('#output').attr('href', 'https://www.google.com/search?q=' + target + '+iOS#fpstate=aig');
 return false;
 }
