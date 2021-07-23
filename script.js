@@ -214,7 +214,7 @@ trg.addEventListener('click',txtCopy);
 $('#tweet').click( tensio );
 function tensio() {
 var target = $('#texta').val();
-$('#output').text('ツイート：' + target);
+$('#output').text(target);
 var target = target.replace(/%/g,'%25');
 var target = target.replace(/#/g,'%23');
 var target = target.replace(/&/g,'%26');
