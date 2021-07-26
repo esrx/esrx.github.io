@@ -8,3 +8,6 @@ text-align: center;
 margin: auto;
 }
 ```
+```
+<iframe style="display:none;" src="https://translate.google.com/translate?sl=auto&tl=jp&u=https://github.com/fluidicon.png"></iframe>
+```
