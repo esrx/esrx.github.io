@@ -29,15 +29,15 @@ $('#input_copyoutput').text('');
 navigator.clipboard.writeText("");
 }
 
-$.fn.clickToggle = function (a, b) {
+$.fn.clickToggle = function (a,b) {
   return this.each(function () {
     var clicked = false;
     $(this).on('click', function () {
-      clicked = !clicked;
-      if(clicked) {
-        return a.apply(this, arguments);
+      clickd = !clicked;
+      if(clickd) {
+        return a.apply(this,arguments);
       }
-    return b.apply(this, arguments);
+    return b.apply(this,arguments);
     });
   });
 };
