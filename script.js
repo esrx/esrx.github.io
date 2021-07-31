@@ -32,7 +32,7 @@ navigator.clipboard.writeText("");
 $.fn.clickToggle = function (a,b) {
   return this.each(function () {
     var clicked = false;
-    $(this).on('click', function () {
+    $(this).on('click',function () {
       clickd = !clicked;
       if(clickd) {
         return a.apply(this,arguments);
