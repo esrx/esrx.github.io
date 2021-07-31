@@ -33,7 +33,7 @@ $.fn.clickToggle = function (a,b) {
   return this.each(function () {
     var clicked = false;
     $(this).on('click',function () {
-      clickd = !clicked;
+      clicked = !clickd;
       if(clickd) {
         return a.apply(this,arguments);
       }
