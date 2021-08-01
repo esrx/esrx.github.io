@@ -1,4 +1,4 @@
-/* index.HTML最下部のjsタグからこれが続いて処理が発生する */
+/* index.html最下部のjsタグからこれが続いて処理が発生する */
 
 $(function () {
 $('#mode').on('click',()=>{
