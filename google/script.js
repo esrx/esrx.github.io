@@ -1,4 +1,4 @@
-document.addEventListener("DOMFocusIn", function(event) {
+document.addEventListener('DOMFocusIn', function(event) {
    var anc = location.hash
    if (anc == "#gsc.tab=1"){
       $('#offd').show();
@@ -14,7 +14,7 @@ document.addEventListener("DOMFocusIn", function(event) {
    }
 }, false);
 
-document.addEventListener("DOMFocusOut", function(event) {
+document.addEventListener('DOMFocusOut', function(event) {
    var anc = location.hash
    if (anc == "#gsc.tab=1"){
       $('#offd').show();
