@@ -24,5 +24,7 @@ margin: auto;
    border-color: #dadada;
 }
 //github.githubassets.com/pinned-octocat.svg
-//www.jaea.go.jp/04/horonobe/assets/images/index/hakase01.svg
 //github.com/fluidicon.png
+
+
+//www.jaea.go.jp/04/horonobe/assets/images/index/hakase01.svg
