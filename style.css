@@ -87,15 +87,6 @@ a:hover {
 text-decoration:underline;
 }
 
-iframe.twitter-timeline {
-    width: 100% !important;
-    border-radius:0 !important;
-    box-shadow:none !important;
-    border:1px solid #ccc !important;
-    padding:10px;
-    backgrounf:#fff
-}
-
 @media (prefers-color-scheme: light) {
     body {
     background-color: white;
