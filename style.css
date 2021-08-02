@@ -87,6 +87,14 @@ a:hover {
 text-decoration:underline;
 }
 
+.scs {
+border-left:solid 1px #dadada;
+border-right:solid 1px #dadada;
+border-bottom:solid 1px #dadada;
+background-position: left bottom 50%;
+border-color: #dadada;
+} 
+
 @media (prefers-color-scheme: light) {
     body {
     background-color: white;
