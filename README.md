@@ -23,7 +23,7 @@ margin: auto;
    background-position: left bottom 50%;
    border-color: #dadada;
 }
-//github.githubassets.com/pinned-octocat.svg
+//github.githubassets.com/pinned-octocat.svg  
 //github.com/fluidicon.png
 
 
