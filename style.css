@@ -87,7 +87,7 @@ a:hover {
 text-decoration:underline;
 }
 
-.twitter-timeline {
+iframe.twitter-timeline {
     width: 100% !important;
     border-radius:0 !important;
     box-shadow:none !important;
