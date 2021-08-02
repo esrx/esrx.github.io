@@ -94,6 +94,9 @@ text-decoration:underline;
    border-bottom:solid 1px #dadada;
    background-position: left bottom 50%;
    border-color: #dadada;
+
+   border-top-left-radius: 1em;
+   border-top-right-radius: 1em;
 }
 
 @media (prefers-color-scheme: light) {
