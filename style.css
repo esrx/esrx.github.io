@@ -80,50 +80,49 @@ display:inline-block;
 
 a {
 color: #1da1f2;
-text-decoration:none;
-font-weight:bold;
+font-weight: bold;
+text-decoration: none;
 }
 a:hover {
-text-decoration:underline;
+text-decoration: underline;
 }
 
-.scs {
-border-left:solid 1px #dadada;
-border-right:solid 1px #dadada;
-border-bottom:solid 1px #dadada;
-background-position: left bottom 50%;
-border-color: #dadada;
-} 
+.scroll {
+overflow-x: scroll;
+white-space: nowrap;
+}
 
 @media (prefers-color-scheme: light) {
-    body {
-    background-color: white;
-    }
+   body {
+   background-color: white;
+   }
+   .scs {
+   border-left:solid 1px #dadada;
+   border-right:solid 1px #dadada;
+   border-bottom:solid 1px #dadada;
+   background-position: left bottom 50%;
+   border-color: #dadada;
+   } 
 .hoge:after{
 content:"light";
 }
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-    background-color: #23282f;
-    }
-    textarea{
-    background-color: #444444;
-    color: white;
-    }
-    p {
-    color: white;
-    }
+   body {
+   background-color: #23282f;
+   }
+   textarea{
+   background-color: #444444;
+   color: white;
+   }
+   p {
+   color: white;
+   }
 .hoge:after{
 content:"dark";
 }
 :root{
 --mycontent:black;
 }
-}
-
-.scroll {
-   overflow-x:scroll;
-   white-space: nowrap;
 }
