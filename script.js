@@ -43,8 +43,6 @@ $.fn.clickToggle = function (a,b) {
 };
 
 
-
-
 var butt = "+-source:twittbot.net+-source:botbird_tweets+-source:Cubi.so+-source:Cheap_Bots_Done_Quick";
 var repl = "+-filter:replies";
 var card = "+-card_name:animated_gif";
