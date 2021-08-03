@@ -102,7 +102,7 @@ white-space: nowrap;
    border-bottom:solid 1px #dadada;
    background-position: left bottom 50%;
    border-color: #dadada;
-   } 
+   }
 .hoge:after{
 content:"light";
 }
@@ -118,6 +118,13 @@ content:"light";
    }
    p {
    color: white;
+   }
+   .scs {
+   border-left:solid 1px;
+   border-right:solid 1px;
+   border-bottom:solid 1px;
+   background-position: left bottom 50%;
+   border-color: #667580;
    }
 .hoge:after{
 content:"dark";
