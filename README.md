@@ -34,3 +34,4 @@ margin: auto;
 <br>
 <img width="100%" src="//swc.nict.go.jp/data/latest/plots/latest_electron_fluence.png">
 ```
+document.getElementById('input_copyoutput');
