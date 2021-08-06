@@ -202,6 +202,7 @@ function txtCopy() {
         document.execCommand('copy');
     }
     document.getElementById("btn_copy").innerText = "End";
+    document.getElementById('input_copyoutput').style.visibility = "hidden";
     setTimeout(()=> {
     document.getElementById("btn_copy").innerText = "Copy";
     },1500);
