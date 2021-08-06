@@ -190,7 +190,7 @@ return false;
 }
 
 function txtCopy() {
-    const etarget = "AAAA";
+    const etarget = document.getElementById('input_copyoutput');
     if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
         etarget.readOnly = false;
         const range = document.createRange();
