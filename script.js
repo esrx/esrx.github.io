@@ -186,11 +186,12 @@ $('#btn_copy').text('Copy');
 $('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target );
 $('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
 $('#lightdack').attr('href', 'https://start.duckduckgo.com/?q=' + target + '&k9=1558d5');
+document.getElementById('input_copyoutput').style.visibility = "hidden";
 return false;
 }
 
 function txtCopy() {
-    const etarget = document.getElementById('input_copyoutput');
+    const etarget = document.getElementById('input_copyoutput').style.visibility = "visible";
     if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
         etarget.readOnly = false;
         const range = document.createRange();
