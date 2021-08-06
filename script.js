@@ -191,7 +191,8 @@ return false;
 }
 
 function txtCopy() {
-    const etarget = document.getElementById('input_copyoutput').style.visibility = "visible";
+    document.getElementById('input_copyoutput').style.visibility = "visible";
+    const etarget = document.getElementById('input_copyoutput');
     if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
         etarget.readOnly = false;
         const range = document.createRange();
