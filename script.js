@@ -225,7 +225,7 @@ $('#output').attr('href', 'https://twitter.com/intent/tweet?text=' + target);
 return false;
 }
 
-$('#iOS').click( evolve );
+$('#App').click( evolve );
 function evolve() {
 var target = $('#texta').val();
 $('#output').text('検索結果：' + target);
