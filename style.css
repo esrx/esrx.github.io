@@ -94,10 +94,7 @@ white-space: nowrap;
 
 .material-icons {
 -webkit-user-select:none;
-}
-.material-icons:active {
-background-color:transparent;
-border:transparent;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 @media (prefers-color-scheme: light) {
