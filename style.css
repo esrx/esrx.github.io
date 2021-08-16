@@ -95,6 +95,10 @@ white-space: nowrap;
 .material-icons {
 -webkit-user-select:none;
 }
+.material-icons:active {
+background-color:transparent;
+border:transparent;
+}
 
 @media (prefers-color-scheme: light) {
    body {
