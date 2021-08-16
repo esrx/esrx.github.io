@@ -206,7 +206,7 @@ function txtCopy() {
     document.getElementById("btn_copy").innerText = "check";
     document.getElementById('input_copyoutput').style.visibility = "hidden";
     setTimeout(()=> {
-    document.getElementById("btn_copy").innerText = "Copy";
+    document.getElementById("btn_copy").innerText = "content_paste";
     },1500);
 }
 const trg = document.getElementById('btn_copy');
