@@ -92,6 +92,10 @@ overflow-x: scroll;
 white-space: nowrap;
 }
 
+.material-icons {
+-webkit-user-select:none;
+}
+
 @media (prefers-color-scheme: light) {
    body {
    background-color: white;
