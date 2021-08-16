@@ -183,7 +183,7 @@ var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
 $('#btn_copy').text('Copy');
-$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target );
+$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+');
 $('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
 $('#lightdack').attr('href', 'https://start.duckduckgo.com/?q=' + target + '&k9=1558d5');
 document.getElementById('input_copyoutput').style.visibility = "hidden";
