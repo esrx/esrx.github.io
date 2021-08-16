@@ -182,7 +182,7 @@ $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typ
 var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
-$('#btn_copy').text('Copy');
+$('#btn_copy').text('content_paste');
 $('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+');
 $('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
 $('#lightdack').attr('href', 'https://start.duckduckgo.com/?q=' + target + '&k9=1558d5');
