@@ -207,7 +207,7 @@ function txtCopy() {
     document.getElementById('input_copyoutput').style.visibility = "hidden";
     setTimeout(()=> {
     document.getElementById("btn_copy").innerText = "content_paste";
-    },1500);
+    },1250);
 }
 const trg = document.getElementById('btn_copy');
 trg.addEventListener('click',txtCopy);
