@@ -135,6 +135,16 @@ $('#hashtags').clickToggle(function (){
    quot = "";
 });
 
+$('#video').clickToggle(function (){
+   $(this).next('.target');
+   $("#video").html('📕video');
+   quot = "+-url:video";
+}, function (){
+   $(this).next('.target');
+   $("#video").html('📘video');
+   quot = "";
+});
+
 $('#source').clickToggle(function (){
    $(this).next('.target');
    $("#source").html('📕source');
