@@ -203,7 +203,7 @@ function txtCopy() {
         etarget.select();
         document.execCommand('copy');
     }
-    document.getElementById("btn_copy").innerText = "check";
+    document.getElementById("btn_copy").innerText = "Task";
     document.getElementById('input_copyoutput').style.visibility = "hidden";
     setTimeout(()=> {
     document.getElementById("btn_copy").innerText = "content_paste";
