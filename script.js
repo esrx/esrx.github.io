@@ -57,6 +57,8 @@ var link = "";
 var hash = "";
 var vide = "";
 var langs = "";
+var gets = "";
+var until = "";
 
 $('#bot').clickToggle(function (){
    $(this).next('.target');
@@ -174,6 +176,7 @@ $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📘until');
    var gets = document.getElementById("date").value;
+   var until = '&tbs=cdr%3A1%2Ccd_max%3A' + gets.getMonth() + '%2F' + gets.getDate() + '%2F' + gets.getFullYear();
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
@@ -200,7 +203,7 @@ var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
 $('#btn_copy').text('content_paste');
-$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+');
+$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+' + until);
 $('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
 $('#lightdack').attr('href', 'https://start.duckduckgo.com/?q=' + target + '&k9=1558d5');
 document.getElementById('input_copyoutput').style.visibility = "hidden";
