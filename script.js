@@ -170,11 +170,15 @@ $('#language').clickToggle(function (){
    langs = "+-lang:"
 });
 
-document.getElementById("today").onchange = function() { 
-    var date = document.getElementById("today").value;
-    alert(date);
-};
-
+$('#date').clickToggle(function (){
+   $(this).next('.target');
+   $("#date").html('📘until');
+   var gets = document.getElementById("today").value;
+}, function (){
+   $(this).next('.target');
+   $("#date").html('📕since');
+   var gets = document.getElementById("today").value;
+});
 
 $('#search').click( sample );
 function sample() {
