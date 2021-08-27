@@ -176,7 +176,7 @@ $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📘until');
    var gets = document.getElementById("date").value;
-   var until = '&tbs=cdr%3A1%2Ccd_max%3A' + (gets.getMonth().toString()) + '%2F' + (gets.getDate().toString()) + '%2F' + (gets.getFullYear().toString());
+   var until = gets.getMonth().toString();
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
