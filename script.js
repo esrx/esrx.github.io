@@ -43,7 +43,7 @@ $.fn.clickToggle = function (a,b) {
 };
 
 
-var butt = "+-source:twittbot.net+-source:botbird_tweets+-source:Cubi.so+-source:Cheap_Bots_Done_Quick";
+var sour = "+-source:twittbot.net+-source:botbird_tweets+-source:Cubi.so+-source:Cheap_Bots_Done_Quick";
 var repl = "+-filter:replies";
 var card = "+-card_name:animated_gif";
 var name = "+OR+@i+-@i";
@@ -53,17 +53,16 @@ var quot = "";
 var link = "";
 var hash = "";
 var vide = "";
-var sour = "";
 var langs = "";
 
 $('#bot').clickToggle(function (){
    $(this).next('.target');
    $("#bot").html('📘bot');
-   butt = "";
+   sour = "";
 }, function (){
    $(this).next('.target');
    $("#bot").html('📕bot');
-   butt = "+-source:twittbot.net+-source:botbird_tweets+-source:Cubi.so+-source:Cheap_Bots_Done_Quick";
+   sour = "+-source:twittbot.net+-source:botbird_tweets+-source:Cubi.so+-source:Cheap_Bots_Done_Quick";
 });
 
 $('#links').clickToggle(function (){
