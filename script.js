@@ -170,14 +170,14 @@ $('#language').clickToggle(function (){
    langs = "+-lang:"
 });
 
-$('#date').clickToggle(function (){
+$('#time').clickToggle(function (){
    $(this).next('.target');
-   $("#date").html('📘until');
-   var gets = document.getElementById("today").value;
+   $("#time").html('📘until');
+   var gets = document.getElementById("date").value;
 }, function (){
    $(this).next('.target');
-   $("#date").html('📕since');
-   var gets = document.getElementById("today").value;
+   $("#time").html('📕since');
+   var gets = document.getElementById("date").value;
 });
 
 $('#search').click( sample );
