@@ -52,6 +52,7 @@ var lang = "";
 var quot = "";
 var link = "";
 var hash = "";
+var vide = "";
 var sour = "";
 var langs = "";
 
@@ -128,21 +129,21 @@ $('#quote').clickToggle(function (){
 $('#hashtags').clickToggle(function (){
    $(this).next('.target');
    $("#hashtags").html('📕hashtags');
-   quot = "+-filter:hashtags";
+   hash = "+-filter:hashtags";
 }, function (){
    $(this).next('.target');
    $("#hashtags").html('📘hashtags');
-   quot = "";
+   hash = "";
 });
 
 $('#video').clickToggle(function (){
    $(this).next('.target');
    $("#video").html('📕video');
-   quot = "+-url:video";
+   vide = "+-url:video";
 }, function (){
    $(this).next('.target');
    $("#video").html('📘video');
-   quot = "";
+   vide = "";
 });
 
 $('#source').clickToggle(function (){
@@ -187,7 +188,7 @@ var lang = langs + select;
 if (lang === 'und') {
     var lang = "";
 }
-var exesearch = target + lang + repl + quot + card + link + hash + choi + butt + sour + name;
+var exesearch = target + lang + vide + repl + quot + card + link + hash + choi + butt + sour + name;
 $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typed_query&f=live');
 var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
