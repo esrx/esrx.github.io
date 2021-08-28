@@ -178,7 +178,7 @@ $('#time').clickToggle(function (){
    var day = gets.getDate().toString();
    var month = gets.getMonth().toString();
    var year = gets.getFullYear().toString();
-   times = '&tbs=cdr%3A1%2Ccd_max%3A' + day + '%2F' + month + '%2F' + year;
+   times = '&tbs=cdr%3A1%2Ccd_max%3A' + month + '%2F' + day + '%2F' + year;
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
@@ -186,7 +186,7 @@ $('#time').clickToggle(function (){
    var day = gets.getDate().toString();
    var month = gets.getMonth().toString();
    var year = gets.getFullYear().toString();
-   times = '&tbs=cdr%3A1%2Ccd_min%3A' + day + '%2F' + month + '%2F' + year;
+   times = '&tbs=cdr%3A1%2Ccd_min%3A' + month + '%2F' + day + '%2F' + year;
 });
 
 $('#search').click( sample );
