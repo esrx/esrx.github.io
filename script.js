@@ -174,11 +174,11 @@ $('#language').clickToggle(function (){
 $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📘until');
-   var untils = "BBB";
+   untils = "BBB";
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
-   var untils = "AAA";
+   untils = "AAA";
 });
 
 $('#search').click( sample );
