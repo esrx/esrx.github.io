@@ -163,12 +163,12 @@ $('#language').clickToggle(function (){
    $(this).next('.target');
    $("#language").html('📘lang');
    var select = $("#lang").val();
-   langs = "+lang:"
+   langs = "+lang:";
 }, function (){
    $(this).next('.target');
    $("#language").html('📕lang');
    var select = $("#lang").val();
-   langs = "+-lang:"
+   langs = "+-lang:";
 });
 
 $('#time').clickToggle(function (){
