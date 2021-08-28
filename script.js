@@ -174,7 +174,7 @@ $('#language').clickToggle(function (){
 $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📘until');
-   var untils = $("#dates").val();
+   var untils = "BBB";
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
@@ -195,14 +195,13 @@ var lang = langs + select;
 if (lang === 'und') {
     var lang = "";
 }
-var until = untils;
 var exesearch = target + lang + vide + repl + quot + card + link + hash + choi + sour + name;
 $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typed_query&f=live');
 var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
 $('#btn_copy').text('content_paste');
-$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+' + until);
+$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+' + untils);
 $('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
 $('#lightdack').attr('href', 'https://start.duckduckgo.com/?q=' + target + '&k9=1558d5');
 document.getElementById('input_copyoutput').style.visibility = "hidden";
