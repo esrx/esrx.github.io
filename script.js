@@ -182,6 +182,10 @@ $('#time').clickToggle(function (){
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
+   var gets = new Date($('#date').val());
+   var day = gets.getDate().toString();
+   var month = gets.getMonth().toString();
+   var year = gets.getFullYear().toString();
    times = '&tbs=cdr%3A1%2Ccd_min%3A' + day + '%2F' + month + '%2F' + year;
 });
 
