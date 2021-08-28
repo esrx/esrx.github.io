@@ -89,8 +89,6 @@ $('#lightd').hide();
 <option value="kn">カンナダ語</option>
 </select>
 <button type="button" id="language" class="us">📙lang</button>
-<input type="date" id="date" class="ja"></input>
-<button type="button" id="time" class="us">📙time</button>
 <script>
 window.onload = function () {
 var today = new Date();
@@ -100,6 +98,8 @@ var dd = ("0"+today.getDate()).slice(-2);
 document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
 }
 </script>
+<input type="date" id="date" class="ja"></input>
+<button type="button" id="time" class="us">📙time</button>
 <br>
 <button type="button" id="bot" class="us">📕bot</button>
 <button type="button" id="gif" class="us">📕gif</button>
