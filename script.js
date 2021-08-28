@@ -57,7 +57,7 @@ var link = "";
 var hash = "";
 var vide = "";
 var langs = "";
-var until = "";
+var times = "";
 
 $('#bot').clickToggle(function (){
    $(this).next('.target');
@@ -175,11 +175,14 @@ $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📘until');
    var gets = new Date($('#date').val());
-   until = gets.getDate().toString();
+   var day = gets.getDate().toString();
+   var month = gets.getMonth().toString();
+   var year = gets.getFullYear().toString();
+   times = '&tbs=cdr%3A1%2Ccd_max%3A' + day + '%2F' + month + '%2F' + year;
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
-   until = "AAA";
+   times = '&tbs=cdr%3A1%2Ccd_min%3A' + day + '%2F' + month + '%2F' + year;
 });
 
 $('#search').click( sample );
@@ -202,7 +205,7 @@ var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
 $('#btn_copy').text('content_paste');
-$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+' + until);
+$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+' + times);
 $('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
 $('#lightdack').attr('href', 'https://start.duckduckgo.com/?q=' + target + '&k9=1558d5');
 document.getElementById('input_copyoutput').style.visibility = "hidden";
