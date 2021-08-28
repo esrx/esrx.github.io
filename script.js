@@ -58,7 +58,7 @@ var hash = "";
 var vide = "";
 var langs = "";
 var gets = "";
-var until = "";
+var until = "AAAAA";
 
 $('#bot').clickToggle(function (){
    $(this).next('.target');
