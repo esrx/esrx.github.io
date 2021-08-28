@@ -175,8 +175,7 @@ $('#language').clickToggle(function (){
 $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📘until');
-   var gets = document.getElementById("date").value;
-   var gets = new Date(gets);
+   var gets = new Date(document.getElementById("date")).value;
    var until = gets.getMonth().toString();
 }, function (){
    $(this).next('.target');
