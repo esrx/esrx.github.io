@@ -174,7 +174,8 @@ $('#language').clickToggle(function (){
 $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📘until');
-   until = "BBB";
+   var gets = new Date(Document.getElementById("date"));
+   until = gets.getDate() + gets.getMonth() + gets.getFullYear();
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
