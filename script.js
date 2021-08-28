@@ -176,7 +176,8 @@ $('#time').clickToggle(function (){
    $("#time").html('📘until');
    var gets = new Date($('#date').val());
    var day = gets.getDate().toString();
-   var month = gets.getMonth().toString();
+   var month = gets.getMonth() + 1;
+   var month = month.toString();
    var year = gets.getFullYear().toString();
    times = '&tbs=cdr%3A1%2Ccd_max%3A' + month + '%2F' + day + '%2F' + year;
 }, function (){
@@ -184,7 +185,8 @@ $('#time').clickToggle(function (){
    $("#time").html('📕since');
    var gets = new Date($('#date').val());
    var day = gets.getDate().toString();
-   var month = gets.getMonth().toString();
+   var month = gets.getMonth() + 1;
+   var month = month.toString();
    var year = gets.getFullYear().toString();
    times = '&tbs=cdr%3A1%2Ccd_min%3A' + month + '%2F' + day + '%2F' + year;
 });
