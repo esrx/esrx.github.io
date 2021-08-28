@@ -57,7 +57,7 @@ var link = "";
 var hash = "";
 var vide = "";
 var langs = "";
-var until = "AAAAA";
+var untils = "AAAAA";
 
 $('#bot').clickToggle(function (){
    $(this).next('.target');
@@ -174,11 +174,11 @@ $('#language').clickToggle(function (){
 $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📘until');
-   var until = document.getElementById("date").value;
+   var untils = $("#date").val();
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
-   var until = "AAA";
+   var untils = "AAA";
 });
 
 $('#search').click( sample );
@@ -195,7 +195,7 @@ var lang = langs + select;
 if (lang === 'und') {
     var lang = "";
 }
-var until = until;
+var until = untils;
 var exesearch = target + lang + vide + repl + quot + card + link + hash + choi + sour + name;
 $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typed_query&f=live');
 var starget = exesearch.replace(/\+/g,' ');
