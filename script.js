@@ -181,6 +181,7 @@ $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📕since');
    var gets = document.getElementById("date").value;
+   var until = "AAA";
 });
 
 $('#search').click( sample );
