@@ -195,6 +195,7 @@ var lang = langs + select;
 if (lang === 'und') {
     var lang = "";
 }
+var until = until;
 var exesearch = target + lang + vide + repl + quot + card + link + hash + choi + sour + name;
 $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typed_query&f=live');
 var starget = exesearch.replace(/\+/g,' ');
