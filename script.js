@@ -174,12 +174,10 @@ $('#language').clickToggle(function (){
 $('#time').clickToggle(function (){
    $(this).next('.target');
    $("#time").html('📘until');
-   var gets = new Date(document.getElementById("date")).value;
-   var until = gets.getMonth().toString();
+   var until = document.getElementById("date").value;
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
-   var gets = document.getElementById("date").value;
    var until = "AAA";
 });
 
