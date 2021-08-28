@@ -57,7 +57,6 @@ var link = "";
 var hash = "";
 var vide = "";
 var langs = "";
-var gets = "";
 var until = "AAAAA";
 
 $('#bot').clickToggle(function (){
