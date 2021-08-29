@@ -47,6 +47,11 @@ $('#light').hide();
 </script>
 ```
 ```
+$('#mode').on('click',()=>{
+$('[id=light]').toggle();
+$('[id=dark]').toggle();
+});
+
    $('#light').toggle();
    $('#dark').toggle();
 ```
