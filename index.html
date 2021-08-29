@@ -135,12 +135,12 @@ document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
 </p>
 <script>
 if(window.matchMedia('(prefers-color-scheme: light)').matches == true){
-$('#dark').each(function(i,e){
+$('[id=dark]').each(function(i,e){
 $(e).hide();
 });
 }
 if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
-$('#light').each(function(i,e){
+$('[id=light]').each(function(i,e){
 $(e).hide();
 });
 }
