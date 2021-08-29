@@ -19,10 +19,12 @@ if(window.matchMedia('(prefers-color-scheme: light)').matches == true){
 $('.darkd').each(function(i,e){
 $(e).hide();
 });
+}
 if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
 $('.lightd').each(function(i,e){
 $(e).hide();
 });
+}
 </script>
 <form>
 <textarea id="texta" style="width:90%;height:100px;"></textarea>
