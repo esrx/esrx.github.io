@@ -35,3 +35,14 @@ margin: auto;
 <img width="100%" src="//swc.nict.go.jp/data/latest/plots/latest_electron_fluence.png">
 ```
 document.getElementById('input_copyoutput');
+
+```
+<script>
+if(window.matchMedia('(prefers-color-scheme: light)').matches == true) {
+$('#dark').hide();
+}
+if(window.matchMedia('(prefers-color-scheme: dark)').matches == true) {
+$('#light').hide();
+}
+</script>
+```
