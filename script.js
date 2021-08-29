@@ -4,6 +4,14 @@ varの変数は被っても良くてその場合クリックした方が優先�
 #modeの下にあるタグしか反応しない
 */
 
+window.onload = function () {
+var today = new Date();
+var yyyy = today.getFullYear();
+var mm = ("0"+(today.getMonth()+1)).slice(-2);
+var dd = ("0"+today.getDate()).slice(-2);
+document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
+}
+
 if(window.matchMedia('(prefers-color-scheme: light)').matches == true){
    $('[id=dark]').each(function(){
    $(this).hide();
