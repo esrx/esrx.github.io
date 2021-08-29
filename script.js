@@ -15,8 +15,8 @@ if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
 }
 
 $('#mode').on('click',()=>{
-$('#light').toggle();
-$('#dark').toggle();
+$('[id=light]').toggle();
+$('[id=dark]').toggle();
 });
 
 function hidaris() {
