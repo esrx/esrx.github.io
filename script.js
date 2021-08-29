@@ -3,12 +3,11 @@ index.html最下部のjsタグからこれが続いて処理が発生する
 varの変数は被っても良くてその場合クリックした方が優先される
 */
 
-$(function(){
+
 $('#mode').on('click',()=>{
 $('#light').toggle();
 $('#dark').toggle();
 });
-}
 
 function hidaris() {
 var areas = document.getElementById('hidari').value;
