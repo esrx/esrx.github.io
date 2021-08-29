@@ -14,9 +14,11 @@ if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
    });
 }
 
-$('#mode').on('click',()=>{
-$('[id=light]').nextAll.toggle();
-$('[id=dark]').nextAll.toggle();
+$(function () {
+   $('#mode').on('click',function() {
+      $(this).nextAll('[id=light]').toggle();
+      $(this).nextAll('[id=dark]').toggle();
+   });
 });
 
 function hidaris() {
