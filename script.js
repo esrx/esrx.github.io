@@ -8,6 +8,9 @@ $(function () {
    $('[id=light]').hide();
    $('[id=dark]').show();
    $(this).next().toggle();
+   $('[id=light]').show();
+   $('[id=dark]').hide();
+   $(this).next().toggle();
    });
 });
 
