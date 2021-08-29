@@ -6,7 +6,6 @@ varの変数は被っても良くてその場合クリックした方が優先�
 $(function () {
    $('#mode').on('click',()=>{
    $('[id=light]').hide();
-   $(this).next().toggle();
    $('[id=dark]').hide();
    $(this).next().toggle();
    });
