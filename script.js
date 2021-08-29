@@ -57,7 +57,8 @@ var link = "";
 var hash = "";
 var vide = "";
 var langs = "";
-var times = "";
+var timeg = "";
+var timet = "";
 
 $('#bot').clickToggle(function (){
    $(this).next('.target');
@@ -179,7 +180,8 @@ $('#time').clickToggle(function (){
    var month = gets.getMonth() + 1;
    var month = month.toString();
    var year = gets.getFullYear().toString();
-   times = '&tbs=cdr%3A1%2Ccd_max%3A' + month + '%2F' + day + '%2F' + year;
+   timeg = '&tbs=cdr%3A1%2Ccd_max%3A' + month + '%2F' + day + '%2F' + year;
+   timet = 'until:' + year + '-' + month + '-' + day;
 }, function (){
    $(this).next('.target');
    $("#time").html('📕since');
@@ -188,7 +190,8 @@ $('#time').clickToggle(function (){
    var month = gets.getMonth() + 1;
    var month = month.toString();
    var year = gets.getFullYear().toString();
-   times = '&tbs=cdr%3A1%2Ccd_min%3A' + month + '%2F' + day + '%2F' + year;
+   timeg = '&tbs=cdr%3A1%2Ccd_min%3A' + month + '%2F' + day + '%2F' + year;
+   timet = 'since:' + year + '-' + month + '-' + day;
 });
 
 $('#search').click( sample );
@@ -205,13 +208,13 @@ var lang = langs + select;
 if (lang === 'und') {
     var lang = "";
 }
-var exesearch = target + lang + vide + repl + quot + card + link + hash + choi + sour + name;
+var exesearch = target + lang + vide + repl + quot + card + link + hash + choi + timet + sour + name;
 $('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typed_query&f=live');
 var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
 $('#btn_copy').text('content_paste');
-$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+' + times);
+$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+' + timeg);
 $('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
 $('#lightdack').attr('href', 'https://start.duckduckgo.com/?q=' + target + '&k9=1558d5');
 document.getElementById('input_copyoutput').style.visibility = "hidden";
