@@ -46,3 +46,7 @@ $('#light').hide();
 }
 </script>
 ```
+```
+   $('#light').toggle();
+   $('#dark').toggle();
+```
