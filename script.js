@@ -17,7 +17,7 @@ if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
 
 $(function () {
    $('#mode').on('click',function() {
-      $(this).nextAll('#light,#dark').toggle();
+   $(this).nextAll('#light,#dark').toggle();
    });
 });
 
