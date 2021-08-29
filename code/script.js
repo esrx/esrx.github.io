@@ -17,4 +17,5 @@ $('#linksubmit').click( link0 );
 function link0() {
     var lin1 = $('#link').val();
     $('#linkoutput').text( '@app.route("/' + lin1 + '")' + '\n' + 'def ' + lin1 + '():');
+    $('span').attr('data-clipboard-text', 'uha');
 }
