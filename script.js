@@ -5,12 +5,8 @@ varの変数は被っても良くてその場合クリックした方が優先�
 
 $(function () {
    $('#mode').on('click',()=>{
-   $('[id=light]').each(function(){
-   $(this).toggle();
-   });
-   $('[id=dark]').each(function(){
-   $(this).toggle();
-   });
+   $('#light').next.toggle();
+   $('#dark').next.toggle();
 });
 
 function hidaris() {
