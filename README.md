@@ -54,4 +54,6 @@ $('[id=dark]').toggle();
 
    $('#light').toggle();
    $('#dark').toggle();
+
+      $(this).nextAll('[id=dark]').toggle();
 ```
