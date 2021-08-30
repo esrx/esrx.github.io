@@ -4,10 +4,8 @@ varの変数は被っても良くてその場合クリックした方が優先�
 #modeの下にあるタグしか反応しない
 */
 
-$(function () {
-   $('#mode').on('click',function() {
-   $(this).nextAll('#light,#dark').toggle();
-   });
+$('#mode').on('click',function() {
+$(this).nextAll('#light,#dark').toggle();
 });
 
 function hidaris() {
