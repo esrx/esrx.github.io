@@ -145,6 +145,18 @@ document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
 <a href="code"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Code.svg"></a>
 <a href="https://shop.aeon.com/netsuper/hajimete"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/ÆON-Logo.svg"></a>
 </body>
+<script>
+if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
+   $('[id=dark]').each(function(){
+   $(this).hide();
+   });
+}
+if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
+   $('[id=light]').each(function(){
+   $(this).hide();
+   });
+}
+</script>
 <script src="//platform.twitter.com/widgets.js"></script>
 <script src="script.js"></script>
 </html>
