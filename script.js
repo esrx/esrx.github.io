@@ -4,16 +4,6 @@ varの変数は被っても良くてその場合クリックした方が優先�
 #modeの下にあるタグしか反応しない
 */
 
-if(window.matchMedia('(prefers-color-scheme: light)').matches == true){
-   $('[id=dark]').each(function(){
-   $(this).hide();
-   });
-}
-if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
-   $('[id=light]').each(function(){
-   $(this).hide();
-   });
-}
 
 $(function () {
    $('#mode').on('click',function() {
