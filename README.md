@@ -57,3 +57,15 @@ $('[id=dark]').toggle();
 
       $(this).nextAll('[id=dark]').toggle();
 ```
+```
+if(window.matchMedia('(prefers-color-scheme: light)').matches == true){
+   $('[id=dark]').each(function(){
+   $(this).hide();
+   });
+}
+if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
+   $('[id=light]').each(function(){
+   $(this).hide();
+   });
+}
+```
