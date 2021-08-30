@@ -1,11 +1,11 @@
 /*
 index.html最下部のjsタグからこれが続いて処理が発生する
 varの変数は被っても良くてその場合クリックした方が優先される
-#modeの下にあるタグしか反応しない
+nextAll()、prev()
 */
 
 $('#mode').on('click',function() {
-$(this).nextAll('#light,#dark').toggle();
+$(this).siblings('#light,#dark').toggle();
 });
 
 function hidaris() {
