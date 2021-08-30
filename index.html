@@ -11,18 +11,6 @@
 <meta charset="utf-8">
 <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<script>
-if(window.matchMedia('(prefers-color-scheme: light)').matches == true){
-   $('[id=dark]').each(function(){
-   $(this).hide();
-   });
-}
-if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
-   $('[id=light]').each(function(){
-   $(this).hide();
-   });
-}
-</script>
 <body>
 <p id="light"><a id="googlelight" href="https://google.com/search?q=+"><img width="75%" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"></a><a id="lightdack" href="https://start.duckduckgo.com/?kl=jp-jp&k9=1558d5"><img width="25%" src="https://duckduckgo.com/assets/icons/browsers/ddg.svg"></a></p>
 <p id="dark"><a id="googledark" href="google"><img width="70%" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Google_2015_logo_colorless_mourning_period.svg"></a><a id="darkdack" href="https://start.duckduckgo.com/?kl=jp-jp&kae=d&k7=23282f&k21=2a3139&kj=353535&k9=51a5fe&kaa=4285f4&kx=36b685&ka=n&ko=s&ks=m&kp=-2"><img width="30%" src="https://start.duckduckgo.com/assets/logo_homepage.alt.v108.svg"></a></p>
