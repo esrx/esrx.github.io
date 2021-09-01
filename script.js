@@ -8,6 +8,24 @@ $('#mode').on('click',function() {
 $(this).nextAll('#light,#dark').toggle();
 });
 
+var getDevice = (function(){
+var ua = navigator.userAgent;
+if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('iPad') > 0){
+return 'sp';
+}else if(ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+return 'tab';
+}else{
+return 'other';
+}
+})();
+if( getDevice == 'sp' ){
+apps = '+iOS';
+}else if( getDevice == 'tab' ){
+apps = '+Android';
+}else if( getDevice == 'other' ){
+apps = '+PC';
+}
+
 function hidaris() {
 var areas = document.getElementById('hidari').value;
 var aread = document.getElementById('texta');
@@ -262,6 +280,6 @@ var target = target.replace('%','%25');
 var target = target.replace('+','%20');
 var target = target.replace('#','%23');
 var target = target.replace('&','%26');
-$('#output').attr('href', 'https://www.google.com/search?q=' + target + 'iOS+App#fpstate=aig');
+$('#output').attr('href', 'https://www.google.com/search?q=' + target + apps + '+App#fpstate=aig');
 return false;
 }
