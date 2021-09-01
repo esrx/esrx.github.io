@@ -44,21 +44,21 @@ $.fn.clickToggle = function (a,b) {
 };
 
 var getDevice = (function(){
-var ua = navigator.userAgent;
-if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('iPad') > 0){
-return 'sp';
-}else if(ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
-return 'tab';
-}else{
-return 'other';
-}
+    var ua = navigator.userAgent;
+    if(ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('iPad') > 0){
+    return 'sp';
+    }else if(ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0){
+    return 'tab';
+    }else{
+    return 'other';
+    }
 })();
-if( getDevice == 'sp' ){
-apps = '+iOS';
-}else if( getDevice == 'tab' ){
-apps = '+Android';
-}else if( getDevice == 'other' ){
-apps = '+PC';
+if(getDevice == 'sp'){
+    apps = '+iOS';
+}else if(getDevice == 'tab'){
+    apps = '+Android';
+}else if(getDevice == 'other'){
+    apps = '+PC';
 }
 
 var sour = "+-source:twittbot.net+-source:botbird_tweets+-source:Cubi.so+-source:Cheap_Bots_Done_Quick";
