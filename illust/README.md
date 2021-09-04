@@ -10,4 +10,4 @@
 ```
 </body></html>
 ```
-https://html-css-javascript.com/n-space-tab/
+<a href="https://html-css-javascript.com/n-space-tab" target="_blank">XXX</a>
