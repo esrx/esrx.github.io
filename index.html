@@ -152,6 +152,10 @@ $('a').each(function(){
    $(this).attr('rel','noreferrer');
 });
 
+$('.twitter-timeline').each(function(){
+   $(this).attr('data-theme','dark');
+});
+
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
    $('[id=dark]').each(function(){
    $(this).hide();
