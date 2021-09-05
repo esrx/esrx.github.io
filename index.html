@@ -132,8 +132,8 @@ document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
 <br>
 <button id="mode" class="ja">モード変更</button>
 <p class="hoge"></p>
-<p id="light" class="scs"><a rel="noreferrer" href="//twitter.com/ModJapan_jp/lists/list3" class="twitter-timeline" data-lang="ja" data-height="350" data-chrome="noheader" data-theme="light"></a></p>
-<p id="dark" class="scs"><a rel="noreferrer" href="//twitter.com/ModJapan_jp/lists/list3" class="twitter-timeline" data-lang="ja" data-height="350" data-chrome="noheader" data-theme="dark" data-link-color="#1DA1F2"></a></p>
+<p id="light" class="scs"><a href="//twitter.com/ModJapan_jp/lists/list3" class="twitter-timeline" data-lang="ja" data-height="350" data-chrome="noheader" data-theme="light"></a></p>
+<p id="dark" class="scs"><a href="//twitter.com/ModJapan_jp/lists/list3" class="twitter-timeline" data-lang="ja" data-height="350" data-chrome="noheader" data-theme="dark" data-link-color="#1DA1F2"></a></p>
 <br>
 <p id="light"><a class="weatherwidget-io" rel="noreferrer" href="https://forecast7.com/ja/36d20138d25/japan/" data-label_1="日本" data-label_2="天気" data-font="ヒラギノ角ゴ Pro W3" data-theme="pure"></a></p>
 <p id="dark"><a class="weatherwidget-io" rel="noreferrer" href="https://forecast7.com/ja/36d20138d25/japan/" data-label_1="日本" data-label_2="天気" data-font="ヒラギノ角ゴ Pro W3" data-theme="gray"></a></p>
@@ -148,6 +148,10 @@ document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
 <a rel="noreferrer" href="https://shop.aeon.com/netsuper/hajimete"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/ÆON-Logo.svg"></a>
 </body>
 <script>
+$('a').each(function(){
+   $(this).attr('rel','noreferrer');
+});
+
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
    $('[id=dark]').each(function(){
    $(this).hide();
