@@ -152,21 +152,21 @@ $('a').each(function(){
 
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
    $('[id=dark]').each(function(){
-   $(this).hide();
+      $(this).hide();
    });
    $('.weatherwidget-io').each(function(){
-   $(this).attr('data-theme','pure');
+      $(this).attr('data-theme','pure');
    });
 }
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
    $('[id=light]').each(function(){
-   $(this).hide();
+      $(this).hide();
    });
    $('.twitter-timeline').each(function(){
-   $(this).attr('data-theme','dark');
+      $(this).attr('data-theme','dark');
    });
    $('.weatherwidget-io').each(function(){
-   $(this).attr('data-theme','gray');
+      $(this).attr('data-theme','gray');
    });
 }
 </script>
