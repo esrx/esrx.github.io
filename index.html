@@ -12,9 +12,23 @@
 <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <script>
-$('.twitter-timeline').each(function(){
-   $(this).attr('data-theme','dark');
+$('a').each(function(){
+   $(this).attr('rel','noreferrer');
 });
+
+if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
+   $('[id=dark]').each(function(){
+   $(this).hide();
+   });
+}
+if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
+   $('[id=light]').each(function(){
+   $(this).hide();
+   });
+   $('.twitter-timeline').each(function(){
+   $(this).attr('data-theme','dark');
+   });
+}
 </script>
 <body>
 <p id="light"><a id="googlelight" href="https://google.com/search?q=+"><img width="75%" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"></a><a id="lightdack" href="https://start.duckduckgo.com/?kl=jp-jp&k9=1558d5"><img width="25%" src="https://duckduckgo.com/assets/icons/browsers/ddg.svg"></a></p>
@@ -152,22 +166,6 @@ document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
 <a href="code"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Code.svg"></a>
 <a href="https://shop.aeon.com/netsuper/hajimete"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/ÆON-Logo.svg"></a>
 </body>
-<script>
-$('a').each(function(){
-   $(this).attr('rel','noreferrer');
-});
-
-if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
-   $('[id=dark]').each(function(){
-   $(this).hide();
-   });
-}
-if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
-   $('[id=light]').each(function(){
-   $(this).hide();
-   });
-}
-</script>
 <script src="//weatherwidget.io/js/widget.min.js"></script>
 <script src="//platform.twitter.com/widgets.js"></script>
 <script src="script.js"></script>
