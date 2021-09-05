@@ -10,4 +10,5 @@
 ```
 </body></html>
 ```
-<a href="https://html-css-javascript.com/n-space-tab" target="_blank">XXX</a>
+https://rakko.tools/tools/53/
+https://html-css-javascript.com/n-space-tab
