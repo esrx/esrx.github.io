@@ -6,6 +6,9 @@ prev()、nextAll(),siblings()
 
 $('#mode').on('click',function() {
 $(this).siblings('#light,#dark').toggle();
+$('.twitter-timeline').each(function(){
+$(this).attr('data-theme','dark');
+});
 });
 
 function hidaris() {
