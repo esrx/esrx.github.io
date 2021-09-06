@@ -8,7 +8,8 @@
 <body>
 ```
 ```
-</body></html>
+</body>
+</html>
 ```
 https://lab.syncer.jp/Tool/HTML-PrettyPrint/  
 https://html-css-javascript.com/n-space-tab
