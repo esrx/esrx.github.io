@@ -81,15 +81,6 @@
 <option value="kn">カンナダ語</option>
 </select>
 <button type="button" id="language" class="us">📙lang</button>
-<script>
-window.onload = function () {
-var today = new Date();
-var yyyy = today.getFullYear();
-var mm = ("0"+(today.getMonth()+1)).slice(-2);
-var dd = ("0"+today.getDate()).slice(-2);
-document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
-}
-</script>
 <input type="date" id="date"></input>
 <button type="button" id="time" class="us">📙time</button>
 <br>
@@ -142,6 +133,14 @@ document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
 <a href="https://shop.aeon.com/netsuper/hajimete"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/ÆON-Logo.svg"></a>
 </body>
 <script>
+window.onload = function () {
+   var today = new Date();
+   var yyyy = today.getFullYear();
+   var mm = ("0"+(today.getMonth()+1)).slice(-2);
+   var dd = ("0"+today.getDate()).slice(-2);
+   document.getElementById("date").value=yyyy+'-'+mm+'-'+dd;
+}
+
 $('a').each(function(){
    $(this).attr('rel','noreferrer');
 });
