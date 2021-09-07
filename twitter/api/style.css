@@ -1,0 +1,22 @@
+inputs::placeholder {
+    text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+    background-color: white;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+    background-color: #23282f;
+    }
+    p {
+    color:  white;
+    }
+    form {
+    background-color: #444444;
+    color:  white;
+    }
+}
