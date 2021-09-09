@@ -212,7 +212,7 @@ $('#time').clickToggle(function (){
 $('#search').click( sample );
 function sample() {
 var target = $('#texta').val();
-$('#output').text('検索結果：' + target);
+$('#output').html('<span class="fa fa-twitter"></span>' + '検索結果：' + target);
 var target = target.replace(/%/g,'%25');
 var target = target.replace(/\s\s/g,'+');
 var target = target.replace(/\s/g,'+');
