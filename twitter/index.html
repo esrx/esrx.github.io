@@ -4,46 +4,13 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <head>
 <link rel="icon" href="https://avatars.githubusercontent.com/u/7451118">
-<meta charset="utf-8"/>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width , user-scalable=no">
 <meta name="twitter:title" content="TwitterAPI">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/logos/htc-summary-card.jpg"/>
-{{redirect}}
+<meta name="twitter:image" content="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/logos/htc-summary-card.jpg">
 </head>
-<body style="margin:0;">
-<div style="text-align:center;">
-<div style="pointer-events:none;"><img max-width:50%;height:50%;" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Twitter_logo.svg"></div>
-<a href="/redirect"><img style="width:50%;" src="https://coderwall-assets-0.s3.amazonaws.com/uploads/picture/file/4347/twitter_button.png"></a>
-<form>
-<input type="text" id="AT" style="width:90%;" class="inputs" placeholder="Access_token = request.args.get('oauth_token')">
-<input type="text" id="AS" style="width:90%;" class="inputs" placeholder="Access_secret_token = request.args.get('oauth_verifier')">
 
-<select id='select'></select>
-<script>
-var Element = document.getElementById("select");
-for (var i=0; i<=100; i++) {
-  var option = document.createElement("option");
-  option.value = i;
-  option.innerText = i;
-  Element.appendChild(option);
-}
-</script>
-
-<textarea id="texta" style="width:90%;height:100px;"></textarea>
-<br>
-<button type="button" id="tweet">tweet</button>
-<button type="button" id="block">block</button>
-</form>
-<br>
-
-<br>
-<p>{{word}}</p>
-<br>
-<a href="#" id="output">ツイート</a>
-<br>
-<a href="#" id="autoput">その他</a>
-</div>
 </body>
 <script async src="https://platform.twitter.com/widgets.js"></script>
 <script src="script.js"></script>
