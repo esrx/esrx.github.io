@@ -1,22 +1,8 @@
-inputs::placeholder {
-    text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-    body {
-    background-color: white;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-    background-color: #23282f;
-    }
-    p {
-    color:  white;
-    }
-    form {
-    background-color: #444444;
-    color:  white;
-    }
-}
+html, body { margin: 0; text-align: center; padding-bottom: 50px; }
+    .menu {
+      width: 100%;
+      background: #4499cc;
+      position: fixed;
+      bottom: 0;
+      z-index:999;
+    } 
