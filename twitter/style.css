@@ -9,6 +9,8 @@ background: white;
 button {
 margin:0;
 width:25%;
+padding-top:3%;
+padding-bottom:3%;
 border: 0px none;
 background: white;
 }
