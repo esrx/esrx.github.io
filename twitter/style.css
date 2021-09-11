@@ -13,7 +13,5 @@ padding-top:3%;
 padding-bottom:3%;
 border: 0px none;
 background: white;
-}
-button:hover {
-background: white;
+-webkit-tap-highlight-color: transparent;
 }
