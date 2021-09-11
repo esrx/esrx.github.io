@@ -1,8 +1,7 @@
 html, body { margin: 0; text-align: center; padding-bottom: 50px; }
-    .menu {
-      width: 100%;
-      background: #4499cc;
-      position: fixed;
-      bottom: 0;
-      z-index:999;
-    } 
+.menu {
+width: 100%;
+position: fixed;
+bottom: 0;
+z-index: 999;
+} 
