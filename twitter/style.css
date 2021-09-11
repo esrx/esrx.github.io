@@ -2,12 +2,13 @@
 left: 0;
 right: 0;
 bottom: 0;
-width:100%;
 z-index: 999;
 position: fixed;
 background: white;
 } 
 button {
+margin:0;
+width:25%;
 border: 0px none;
-background-color: white;
+background: white;
 }
