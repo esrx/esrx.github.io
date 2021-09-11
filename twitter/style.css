@@ -14,3 +14,6 @@ padding-bottom:3%;
 border: 0px none;
 background: white;
 }
+button:active {
+background: white;
+}
