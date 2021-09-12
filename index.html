@@ -169,6 +169,15 @@ if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
       $(this).attr('data-theme','gray');
    });
 }
+
+var request = new XMLHttpRequest();
+request.open('GET','https://httpbin.org/ip',true);
+request.responseType = 'json';
+request.addEventListener('load',function() {
+   var data = this.response;
+   console.log(data["origin"]);
+   });
+request.send();
 </script>
 <script src="//vjs.zencdn.net/7.14.0/video.min.js"></script>
 <script src="//weatherwidget.io/js/widget.min.js"></script>
