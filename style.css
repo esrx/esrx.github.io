@@ -101,6 +101,11 @@ white-space: nowrap;
 -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
+.video-js {
+width: 100% !important;
+height: auto !important;
+}
+
 @media (prefers-color-scheme: light) {
    body {
    background-color: white;
