@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="//vjs.zencdn.net/7.14.0/video-js.css">
 <link rel="icon" href="//github.com/fluidicon.png">
 <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Sawarabi+Mincho">
@@ -12,6 +13,7 @@
 <meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no">
 <meta charset="utf-8">
 <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="//vjs.zencdn.net/7.14.0/video.min.js"></script>
 </head>
 <body>
 <p id="light"><a id="googlelight" href="https://google.com/search?q=+"><img width="75%" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"></a><a id="lightdack" href="https://start.duckduckgo.com/?kl=jp-jp&k9=1558d5"><img width="25%" src="https://duckduckgo.com/assets/icons/browsers/ddg.svg"></a></p>
@@ -123,7 +125,9 @@
 <p class="hoge"></p>
 <div class="scs"><a href="//twitter.com/ModJapan_jp/lists/list3" class="twitter-timeline" data-lang="ja" data-height="350" data-chrome="noheader"></a></div>
 <a class="weatherwidget-io" href="https://forecast7.com/ja/36d20138d25/japan/" data-label_1="日本" data-label_2="天気" data-font="ヒラギノ角ゴ Pro W3"></a>
-<iframe width="100%" height="270" frameborder="0" allow="fullscreen" src="https://fuku_hls_1-lh.akamaihd.net/i/fuku_hls@348101/master.m3u8"></iframe>
+<video class="video-js" data-setup={} controls playsinline>
+<source src="https://fuku_hls_1-lh.akamaihd.net/i/fuku_hls@348101/master.m3u8">
+</video>
 <br>
 <a href="https://ads.twitter.com/mobile/v1/account"><img src="https://ton.twimg.com/dataproducts/devportalvnext/dist/c7514dde3c570787d4956a41d026c686.svg"></a>
 <a href="https://twitter.com/login?redirect_after_login=https://developer.twitter.com/en/portal/projects-and-apps"><img src="https://ton.twimg.com/dataproducts/devportalvnext/dist/4d9063cc86e095a047cc1937c21410f5.svg"></a>
