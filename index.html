@@ -138,7 +138,7 @@
 <a href="https://shop.aeon.com/netsuper/hajimete"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/ÆON-Logo.svg"></a>
 </body>
 <script>
-window.onload = function () {
+window.addEventListener('DOMContentLoaded',function() {
    var today = new Date();
    var yyyy = today.getFullYear();
    var mm = ("0"+(today.getMonth()+1)).slice(-2);
@@ -170,6 +170,7 @@ if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
    });
 }
 
+window.addEventListener('DOMContentLoaded', function() {
 let response = await fetch('https://httpbin.org/ip');
    if (response.ok) {
      let json = await response.json();
@@ -177,6 +178,7 @@ let response = await fetch('https://httpbin.org/ip');
    } else {
      alert("HTTP-Error:" + response.status);
    }
+}
 </script>
 <script src="//vjs.zencdn.net/7.14.0/video.min.js"></script>
 <script src="//weatherwidget.io/js/widget.min.js"></script>
