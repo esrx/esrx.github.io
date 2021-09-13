@@ -1,7 +1,3 @@
-input[type=date] {
-color:white;
-}
-
 div, textarea {
 font-family:"Kokoro";
 }
@@ -138,6 +134,10 @@ content:"light";
    border-right:solid 1px;
    border-bottom:solid 1px;
    background-position: left bottom 50%;
+   border-color: #667580;
+   }
+   input[type=date] {
+   color:white;
    border-color: #667580;
    }
 .hoge:after{
