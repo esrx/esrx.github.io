@@ -138,7 +138,7 @@ content:"light";
    }
    input[type=date] {
    color: white;
-   background: #444444 url("data:image/svg+xml,xmlns='http://www.w3.org/2000/svg'");
+   background: #444444 url("");
    }
 .hoge:after{
 content:"dark";
