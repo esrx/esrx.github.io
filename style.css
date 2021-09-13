@@ -137,8 +137,9 @@ content:"light";
    border-color: #667580;
    }
    input[type=date] {
+   background: #444444 url();
+   border-color: #667580;
    color: white;
-   background: #444444 url("");
    }
 .hoge:after{
 content:"dark";
