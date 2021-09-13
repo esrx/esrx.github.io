@@ -139,6 +139,7 @@ content:"light";
    input[type=date] {
    background: #444444 url(https://abs.twimg.com/emoji/v2/svg/1f5d3.svg);
    background-repeat: no-repeat;
+   background-position: right;
    border-color: #667580;
    color: white;
    }
