@@ -137,8 +137,9 @@ content:"light";
    border-color: #667580;
    }
    input[type=date] {
-   color: white;
-   background-color: #444444;
+   background:
+   #444444
+   url("data:image/svg+xml,xmlns='http://www.w3.org/2000/svg'")
    }
 .hoge:after{
 content:"dark";
