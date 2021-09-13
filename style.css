@@ -1,3 +1,7 @@
+input[type=date]::-webkit-calendar-picker-indicator:before {
+content:url("https://abs.twimg.com/emoji/v2/svg/1f5d3.svg");
+}
+
 div, textarea {
 font-family:"Kokoro";
 }
