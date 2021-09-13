@@ -141,6 +141,11 @@ content:"light";
    border-color: #667580;
    color: white;
    }
+   select {
+   background: #444444 url();
+   border-color: #667580;
+   color: white;
+   }
 .hoge:after{
 content:"dark";
 }
