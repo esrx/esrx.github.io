@@ -224,7 +224,7 @@ if (lang === 'und') {
     var lang = "";
 }
 var exesearch = target + lang + vide + repl + quot + card + link + hash + choi + timet + sour + name;
-$('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=typed_query&f=live');
+$('#output').attr('href', 'https://twitter.com/search?q=' + exesearch +'&src=spelling_expansion_revert_click&f=live');
 var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
