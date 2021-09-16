@@ -150,7 +150,7 @@ window.addEventListener('DOMContentLoaded',function() {
 var each = document.getElementsByTagName('a');
 for(var i=0; i<each.length; i++){
     var element = each[i];
-    element.setAttribute('rel','noreferrer');
+    element.setAttribute('rel','noopener noreferrer');
 }
 
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
