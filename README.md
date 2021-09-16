@@ -70,9 +70,9 @@ if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
 }
 ```
 ```
-var list = document.getElementsByTagName('a');
-for(var i=0; i<list.length; i++){
-    var element = list[i];
+var each = document.getElementsByTagName('a');
+for(var i=0; i<each.length; i++){
+    var element = each[i];
     element.classList.add('adeed');
 }
 ```
