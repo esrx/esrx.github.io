@@ -76,3 +76,8 @@ for(var i=0; i<each.length; i++){
     element.setAttribute('rel','noreferrer');
 }
 ```
+```
+$('a').each(function(){
+   $(this).attr('rel','noreferrer');
+});
+```
