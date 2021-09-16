@@ -73,7 +73,6 @@ if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
 var each = document.getElementsByTagName('a');
 for(var i=0; i<each.length; i++){
     var element = each[i];
-    element.classList.add('adeed');
-    element.setAttribute('data-theme','dark');
+    element.setAttribute('rel','noreferrer');
 }
 ```
