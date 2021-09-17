@@ -1,7 +1,10 @@
 ```
-<Variable name="blockquote.font" description="Blockquote font"
-   type="font"
-   default="$(robotoLightItalic15)"  value="italic 300 15px Roboto, sans-serif"/>
+  <Variable name="blockquote.font" description="Blockquote font"
+      type="font"
+      default="$(robotoLightItalic15)"  value="normal 300 3px Roboto, sans-serif"/>
+  <Variable name="blockquote.color" description="Blockquote color"
+      type="color"
+      default="#444444"  value="#444444"/>
 ```
 >value部分のitalicをnormalに変更で斜体を元に戻す
 ```
