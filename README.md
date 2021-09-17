@@ -81,3 +81,10 @@ $('a').each(function(){
    $(this).attr('rel','noreferrer');
 });
 ```
+```
+var list = document.getElementsByTagName('blockquote');
+for(var i=0; i<list.length; i++){
+    var element = list[i].innerHTML;
+    list[i].innerHTML = element.replace(/\n/g,'<br>');
+}
+```
