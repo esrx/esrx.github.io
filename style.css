@@ -1,3 +1,20 @@
+div.wrapper {
+position: relative;
+width: 100%;
+}
+div.wrapper::before {
+content:'';
+display: block;
+padding-top: 80%;
+}
+div.wrapper iframe {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+}
+
 div, textarea {
 font-family:"Kokoro";
 }
