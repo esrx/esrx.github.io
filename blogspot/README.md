@@ -19,3 +19,9 @@ background-color:#dcdcdc;
 }
 ```
 >x-largeを消してmediumにする。centerも消す
+```
+<Variable name="posts.text.color" description="Post text color"
+   type="color"
+   default="$(body.text.color)"  value="#000000"/>
+```
+>本文の色を決めている
