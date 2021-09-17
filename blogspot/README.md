@@ -8,8 +8,14 @@
 blockquote{
 color:$(blockquote.color);
 font:$(blockquote.font);
-font-size:x-large;
-text-align:center
+text-align:left;
+font-size:medium;
+margin-left:2%;
+margin-right:2%;
+padding-left:2%;
+padding-right:2%;
+border-radius:5px;
+background-color:#dcdcdc;
 }
 ```
 >x-largeを消してmediumにする。centerも消す
