@@ -82,7 +82,7 @@ $('a').each(function(){
 });
 ```
 ```
-var list = document.getElementsByTagName('blockquote');
+var list = document.querySelectorAll('p,blockquote');
 for(var i=0; i<list.length; i++){
     var element = list[i].innerHTML;
     list[i].innerHTML = element.replace(/\n/g,'<br>');
