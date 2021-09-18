@@ -88,3 +88,8 @@ for(var i=0; i<list.length; i++){
     list[i].innerHTML = element.replace(/\n/g,'<br>');
 }
 ```
+```
+<input type=hidden id="hidari" value="(">
+<input type=hidden id="migi" value=")">
+<button type="button" class="ja" onclick="hidaris();">(　)</button>
+```
