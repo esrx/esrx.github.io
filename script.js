@@ -272,6 +272,18 @@ $('#output').attr('href', 'https://twitter.com/intent/tweet?text=' + target);
 return false;
 }
 
+$('#music').click( spotify );
+function spotify() {
+var target = $('#texta').val();
+$('#output').html('<i class="fab fa-spotify">音楽検索：' + target);
+var target = target.replace('%','%25');
+var target = target.replace('+','%20');
+var target = target.replace('#','%23');
+var target = target.replace('&','%26');
+$('#output').attr('href', 'https://open.spotify.com/search/song/' + target);
+return false;
+}
+
 $('#App').click( evolve );
 function evolve() {
 var target = $('#texta').val();
