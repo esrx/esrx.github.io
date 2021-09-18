@@ -55,7 +55,7 @@ var getDevice = (function(){
 })();
 if(getDevice == 'sp'){
     apps = '+iOS';
-    icons = '<i class="fa fa-apple"></i>';
+    icons = '<i class="fa fa-mobile"></i>';
 }else if(getDevice == 'tab'){
     apps = '+Android';
     icons = '<i class="fa fa-android"></i>';
