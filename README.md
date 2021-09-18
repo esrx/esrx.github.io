@@ -93,3 +93,11 @@ for(var i=0; i<list.length; i++){
 <input type=hidden id="migi" value=")">
 <button type="button" class="ja" onclick="hidaris();">(　)</button>
 ```
+```
+function hidaris() {
+var areas = document.getElementById('hidari').value;
+var aread = document.getElementById('texta');
+aread.value = areas + " " + aread.value;
+var area = document.getElementById('migi').value;document.getElementById('texta').value += " " + area ;
+}
+```
