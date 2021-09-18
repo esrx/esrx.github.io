@@ -23,3 +23,8 @@ for (var i=0; i<=100; i++) {
 ```
 var numbers = $('#select').val();
 ```
+```
+document.getElementById("text-button").onclick = function() {
+document.getElementById("myimage").setAttribute("src", "/image2.png")
+};
+```
