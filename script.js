@@ -275,7 +275,7 @@ return false;
 $('#music').click( spotify );
 function spotify() {
 var target = $('#texta').val();
-$('#output').html('<i class="fab fa-spotify">音楽検索：' + target);
+$('#output').html('<i class="fa fa-spotify">音楽検索：' + target);
 var target = target.replace('%','%25');
 var target = target.replace('+','%20');
 var target = target.replace('#','%23');
