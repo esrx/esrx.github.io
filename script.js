@@ -283,8 +283,6 @@ var target = target.replace('+','%20');
 var target = target.replace('#','%23');
 var target = target.replace('&','%26');
 $('#output').attr('href', 'https://open.spotify.com/search/song/' + target);
-window.open('spotify://search/track:' + target);
-setTimeout("window.open('https://open.spotify.com/search/song/' + target)",1000);
 return false;
 }
 
