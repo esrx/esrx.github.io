@@ -289,7 +289,7 @@ return false;
 $('#App').click( evolve );
 function evolve() {
 var target = $('#texta').val();
-$('#output').html( icons + '検索App：' + target);
+$('#output').html( icons + '検索結果：' + target);
 var target = target.replace('%','%25');
 var target = target.replace('+','%20');
 var target = target.replace('#','%23');
