@@ -282,7 +282,7 @@ var target = target.replace('%','%25');
 var target = target.replace('+','%20');
 var target = target.replace('#','%23');
 var target = target.replace('&','%26');
-$('#output').attr('href', 'https://open.spotify.com/search/song/' + target);
+$('#output').attr('href', 'https://open.spotify.com/search/song/' + target + '/');
 return false;
 }
 
