@@ -55,8 +55,10 @@ var getDevice = (function(){
 })();
 if(getDevice == 'sp'){
     apps = '+iOS';
+    icons = '<i class="fa fa-apple"></i>';
 }else if(getDevice == 'tab'){
     apps = '+Android';
+    icons = '<i class="fa fa-android"></i>';
 }else if(getDevice == 'other'){
     apps = '+PC';
 }
@@ -287,7 +289,7 @@ return false;
 $('#App').click( evolve );
 function evolve() {
 var target = $('#texta').val();
-$('#output').html('<i class="fa fa-app-store"></i>検索App：' + target);
+$('#output').html( icons + '検索App：' + target);
 var target = target.replace('%','%25');
 var target = target.replace('+','%20');
 var target = target.replace('#','%23');
