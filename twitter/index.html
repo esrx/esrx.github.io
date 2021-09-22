@@ -19,15 +19,13 @@ var params = new URLSearchParams(link);
 var user = params.get("user");
 var list = params.get("list");
 
-var timeline = document.getElementsByClassName('twitter-timeline');
-
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
-timeline.setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
+document.getElementsByClassName('twitter-timeline').setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
 }
 
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
-timeline.setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
-timeline.setAttribute('data-theme','dark');
+document.getElementsByClassName('twitter-timeline').setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
+document.getElementsByClassName('twitter-timeline').setAttribute('data-theme','dark');
 }
 
 const homes = document.getElementById('homes').getAttribute("d");
