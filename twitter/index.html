@@ -21,13 +21,15 @@
 <script>
 var link = window.location.search;
 var params = new URLSearchParams(link);
+var list = params.get("user");
 var list = params.get("list");
+
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
     var each = document.querySelectorAll('.twitter-timeline');
     for(var i=0; i<each.length; i++){
     var element = each[i];
     element.setAttribute('data-theme','dark');
-    element.setAttribute('href','https://twitter.com/i/lists/' + list);
+    element.setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
     }
 }
 
