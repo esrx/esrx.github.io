@@ -55,7 +55,6 @@ border: 0px none;
 <script>
 var link = window.location.search;
 var params = new URLSearchParams(link);
-var user = params.get("user");
 var lists = params.get("lists");
 var list = params.get("list");
 var timline = document.getElementsByClassName('twitter-timeline');
@@ -66,7 +65,7 @@ var youtube = document.getElementsByClassName('ybe');
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
    for(i=0; i<1; i++){
    var timelines = timline[i];
-   timelines.setAttribute('href','https://twitter.com/' + user + '/lists/' + lists);
+   timelines.setAttribute('data-widget-id=',lists);
    var frames = frame[i];
    frames.setAttribute('height',height);
    var youtubes = youtube[i];
@@ -77,7 +76,7 @@ if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
    for(i=0; i<1; i++){
    var timelines = timline[i];
-   timelines.setAttribute('href','https://twitter.com/' + user + '/lists/' + lists);
+   timelines.setAttribute('data-widget-id=',lists);
    timelines.setAttribute('data-theme','dark');
    var frames = frame[i];
    frames.setAttribute('height',height);
