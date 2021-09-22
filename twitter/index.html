@@ -21,7 +21,7 @@
 <script>
 var link = window.location.search;
 var params = new URLSearchParams(link);
-var list = params.get("user");
+var user = params.get("user");
 var list = params.get("list");
 
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
