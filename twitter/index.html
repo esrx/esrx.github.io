@@ -18,11 +18,14 @@ var link = window.location.search;
 var params = new URLSearchParams(link);
 var user = params.get("user");
 var list = params.get("list");
-var each = document.getElementsByClassName('twitter-timeline');
-for(i=0; i<1; i++){
-var element = each[i];
-element.setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
-};
+if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
+document.getElementsByClassName('twitter-timeline').setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
+}
+
+if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
+document.getElementsByClassName('twitter-timeline').setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
+document.getElementsByClassName('twitter-timeline').setAttribute('data-theme','dark');
+}
 
 const homes = document.getElementById('homes').getAttribute("d");
 const homesd = document.getElementById('homesd').getAttribute("d");
