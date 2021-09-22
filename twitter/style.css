@@ -5,7 +5,8 @@ bottom: 0;
 z-index: 999;
 position: fixed;
 background: white;
-} 
+}
+
 button {
 margin:0;
 width:25%;
@@ -14,4 +15,10 @@ padding-bottom:2.8%;
 border: 0px none;
 background: white;
 -webkit-tap-highlight-color: transparent;
+}
+
+@media (prefers-color-scheme: light) {
+   body {
+   background-color: white;
+   }
 }
