@@ -26,6 +26,10 @@ window.addEventListener('DOMContentLoaded',function() {
 document.getElementByClassName('twitter-timeline').setAttribute("href", ' https://twitter.com/i/lists/' + list);
 });
 
+if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
+document.getElementByClassName('twitter-timeline').setAttribute("data-theme", ' dark');
+}
+
 const homes = document.getElementById('homes').getAttribute("d");
 const homesd = document.getElementById('homesd').getAttribute("d");
 const explores = document.getElementById('explores').getAttribute("d");
