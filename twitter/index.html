@@ -27,7 +27,7 @@ document.getElementByClassName('twitter-timeline').setAttribute("href", ' https:
 });
 
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
-document.getElementByClassName('twitter-timeline').setAttribute("data-theme", ' dark');
+document.querySelectorAll('.twitter-timeline').setAttribute('data-theme','dark');
 }
 
 const homes = document.getElementById('homes').getAttribute("d");
