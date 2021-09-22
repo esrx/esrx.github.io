@@ -26,7 +26,7 @@ var list = params.get("list");
 var each = document.getElementsByClassName('twitter-timeline');
 for(i=0; i<1; i++){
 var element = each[i];
-document.getElementsByClassName('twitter-timeline').setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
+element.getElementsByClassName('twitter-timeline').setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
 };
 
 const homes = document.getElementById('homes').getAttribute("d");
