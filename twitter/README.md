@@ -28,3 +28,10 @@ document.getElementById("text-button").onclick = function() {
 document.getElementById("myimage").setAttribute("src", "/image2.png")
 };
 ```
+```
+var each = document.getElementsByClassName('twitter-timeline');
+for(i=0; i<1; i++){
+var element = each[i];
+element.setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
+};
+```
