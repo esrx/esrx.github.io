@@ -36,6 +36,12 @@ if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
    };
 }
 
+var each = document.getElementsByTagName('a');
+for(var i=0; i<each.length; i++){
+    var element = each[i];
+    element.setAttribute('rel','noopener noreferrer');
+}
+
 const homes = document.getElementById('homes').getAttribute("d");
 const homesd = document.getElementById('homesd').getAttribute("d");
 const explores = document.getElementById('explores').getAttribute("d");
