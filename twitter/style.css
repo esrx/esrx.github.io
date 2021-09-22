@@ -4,7 +4,6 @@ right: 0;
 bottom: 0;
 z-index: 999;
 position: fixed;
-background: white;
 }
 
 button {
@@ -20,5 +19,16 @@ background: white;
 @media (prefers-color-scheme: light) {
    body {
    background-color: white;
+   }
+   .menu{
+   background: white;
+   }
+}
+@media (prefers-color-scheme: dark) {
+   body {
+   background-color: #23282f;
+   }
+   .menu{
+   background: #23282f;
    }
 }
