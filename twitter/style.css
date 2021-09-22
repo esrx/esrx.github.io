@@ -19,6 +19,9 @@ border: 0px none;
    body {
    background-color: white;
    }
+   form{
+   border-top:solid 0.5px #dadada;
+   }
    button{
    background: white;
    }
@@ -26,6 +29,9 @@ border: 0px none;
 @media (prefers-color-scheme: dark) {
    body {
    background-color: #23282f;
+   }
+   form{
+   border-top:solid 0.25px #9da3ab;
    }
    button{
    background: #23282f;
