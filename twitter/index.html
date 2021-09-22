@@ -23,9 +23,9 @@ var link = window.location.search;
 var params = new URLSearchParams(link);
 var user = params.get("user");
 var list = params.get("list");
-(function () {
+function () {
 document.getElementsByClassName('twitter-timeline').setAttribute('href','https://twitter.com/' + user + '/lists/' + list);
-}());
+}();
 
 const homes = document.getElementById('homes').getAttribute("d");
 const homesd = document.getElementById('homesd').getAttribute("d");
