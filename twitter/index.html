@@ -2,13 +2,51 @@
 <html>
 <head>
 <link rel="icon" href="https://avatars.githubusercontent.com/u/7451118">
-<link rel="stylesheet" href="style.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no">
 <meta name="twitter:title" content="CSS">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/logos/htc-summary-card.jpg">
 </head>
+<style>
+.menu {
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 999;
+position: fixed;
+}
+button {
+margin:0;
+width:25%;
+padding-top:2.8%;
+padding-bottom:2.8%;
+border: 0px none;
+-webkit-tap-highlight-color: transparent;
+}
+@media (prefers-color-scheme: light) {
+   body {
+   background-color: white;
+   }
+   form{
+   border-top:solid 0.5px #dadada;
+   }
+   button{
+   background: white;
+   }
+}
+@media (prefers-color-scheme: dark) {
+   body {
+   background-color: #23282f;
+   }
+   form{
+   border-top:solid 0.25px #9da3ab;
+   }
+   button{
+   background: #23282f;
+   }
+}
+</style>
 <body style="margin-left:0;margin-right:0;">
 <div id="timeline" style="margin-bottom:11%;" class="scs"><a class="twitter-timeline" data-lang="ja" data-chrome="noheader nofooter"></a></div>
 <div id="search" style="margin-bottom:11%;display:none;"><iframe class="frm" width="100%" src="https://nitter.fdn.fr/search?e-nativeretweets=on" frameborder="0"></iframe></div>
