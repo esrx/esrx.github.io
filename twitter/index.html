@@ -22,12 +22,7 @@
 var link = window.location.search;
 var params = new URLSearchParams(link);
 var list = params.get("list");
-document.getElementByClassName('twitter-timeline').setAttribute("href", ' https://twitter.com/i/lists/' + list);
-
-if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
-var element = document.querySelectorAll('.twitter-timeline');
-element.setAttribute('data-theme','dark');
-}
+document.getElementByClassName('twitter-timeline').setAttribute("href", 'https://twitter.com/i/lists/' + list);
 
 const homes = document.getElementById('homes').getAttribute("d");
 const homesd = document.getElementById('homesd').getAttribute("d");
