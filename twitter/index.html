@@ -22,9 +22,7 @@
 var link = window.location.search;
 var params = new URLSearchParams(link);
 var list = params.get("list");
-window.addEventListener('DOMContentLoaded',function() {
 document.getElementByClassName('twitter-timeline').setAttribute("href", ' https://twitter.com/i/lists/' + list);
-});
 
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
 var element = document.querySelectorAll('.twitter-timeline');
