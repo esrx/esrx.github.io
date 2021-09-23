@@ -1,4 +1,5 @@
 var link = window.location.search;
+var links = window.location.hostname;
 var params = new URLSearchParams(link);
 var user = params.get("user");
 var lists = params.get("lists");
