@@ -7,6 +7,7 @@ var list = params.get("list");
 var timline = document.getElementsByClassName('twitter-timeline');
 var height = window.screen.height;
 var frame = document.getElementsByClassName('frm');
+var homeweb = document.getElementsByClassName('web');
 var youtube = document.getElementsByClassName('ybe');
 
 var each = document.getElementsByTagName('iframe');
@@ -23,6 +24,8 @@ if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
    var frames = frame[i];
    frames.setAttribute('height',height);
    frames.setAttribute('src','https://tweet.lambda.dance/search');
+   var homewebs = homeweb[i];
+   homewebs.setAttribute('src','https://' + links);
    var youtubes = youtube[i];
    youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&list=' + list);
    };
