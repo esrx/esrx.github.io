@@ -40,6 +40,9 @@ if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
    var frames = frame[i];
    frames.setAttribute('height',height);
    frames.setAttribute('src','https://nitter.moomoo.me/search');
+   var homewebs = homeweb[i];
+   homewebs.setAttribute('height',height);
+   homewebs.setAttribute('src','https://' + links);
    var youtubes = youtube[i];
    youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&list=' + list);
    };
