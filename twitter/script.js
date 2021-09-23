@@ -13,6 +13,7 @@ var each = document.getElementsByTagName('iframe');
 for(var i=0; i<each.length; i++){
     var element = each[i];
     element.setAttribute('width','100%');
+    element.setAttribute('frameborder','0');
 }
 
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
