@@ -14,6 +14,7 @@ if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
    timelines.setAttribute('href','https://twitter.com/' + user + '/lists/' + lists);
    var frames = frame[i];
    frames.setAttribute('height',height);
+   frames.setAttribute('src','https://tweet.lambda.dance/search');
    var youtubes = youtube[i];
    youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&list=' + list);
    };
@@ -26,6 +27,7 @@ if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
    timelines.setAttribute('data-theme','dark');
    var frames = frame[i];
    frames.setAttribute('height',height);
+   frames.setAttribute('src','https://nitter.moomoo.me/search');
    var youtubes = youtube[i];
    youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&list=' + list);
    };
