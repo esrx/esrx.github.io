@@ -9,6 +9,12 @@ var height = window.screen.height;
 var frame = document.getElementsByClassName('frm');
 var youtube = document.getElementsByClassName('ybe');
 
+var each = document.getElementsByTagName('iframe');
+for(var i=0; i<each.length; i++){
+    var element = each[i];
+    element.setAttribute('width','100%');
+}
+
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
    for(i=0; i<1; i++){
    var timelines = timline[i];
