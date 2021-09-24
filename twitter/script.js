@@ -34,7 +34,7 @@ var before = 'fill:#9da3ab;'
 }
 
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
-var before = 'fill:eeeeee;'
+var before = 'fill:#eeeeee;'
    for(i=0; i<1; i++){
    var timelines = timline[i];
    timelines.setAttribute('href','https://twitter.com/' + user + '/lists/' + lists);
