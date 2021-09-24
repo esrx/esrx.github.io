@@ -18,6 +18,7 @@ for(var i=0; i<each.length; i++){
 }
 
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
+var before = 'fill:#9da3ab;'
    for(i=0; i<1; i++){
    var timelines = timline[i];
    timelines.setAttribute('href','https://twitter.com/' + user + '/lists/' + lists);
@@ -33,6 +34,7 @@ if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
 }
 
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
+var before = 'fill:white;'
    for(i=0; i<1; i++){
    var timelines = timline[i];
    timelines.setAttribute('href','https://twitter.com/' + user + '/lists/' + lists);
@@ -60,7 +62,6 @@ const explores = document.getElementById('explores').getAttribute("d");
 const notifications = document.getElementById('notifications').getAttribute("d");
 const messages = document.getElementById('messages').getAttribute("d");
 const messagesd = document.getElementById('messagesd').getAttribute("d");
-const before = 'fill:#9da3ab;'
 const after = 'fill:#1da1f2;'
 
 document.getElementById('home').onclick = function() {
