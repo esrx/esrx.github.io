@@ -3,6 +3,26 @@ https://esrx.github.io/script.js
 https://esrx.github.io/style.css
 
 ```
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no">
+<title>GitHub</title>
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta http-equiv="refresh" content="0;URL=https://github.com/login?return_to=/search?q=user:esrx%26s=updated">
+<meta name="twitter:title" content="GitHub">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/logos/htc-summary-card.jpg">
+<script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+</body>
+</html>
+```
+
+```
 .google {
 text-align: center;
 margin: auto;
