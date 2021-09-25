@@ -10,6 +10,12 @@ var frame = document.getElementsByClassName('frm');
 var homeweb = document.getElementsByClassName('web');
 var youtube = document.getElementsByClassName('ybe');
 
+var each = document.getElementsByTagName('a');
+for(var i=0; i<each.length; i++){
+    var element = each[i];
+    element.setAttribute('rel','noopener noreferrer');
+}
+
 var each = document.getElementsByTagName('iframe');
 for(var i=0; i<each.length; i++){
     var element = each[i];
@@ -48,12 +54,6 @@ var before = 'fill:#eeeeee;'
    var youtubes = youtube[i];
    youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&list=' + list);
    };
-}
-
-var each = document.getElementsByTagName('a');
-for(var i=0; i<each.length; i++){
-    var element = each[i];
-    element.setAttribute('rel','noopener noreferrer');
 }
 
 const homes = document.getElementById('homes').getAttribute("d");
