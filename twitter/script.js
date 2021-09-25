@@ -4,11 +4,11 @@ var params = new URLSearchParams(link);
 var user = params.get("user");
 var lists = params.get("lists");
 var list = params.get("list");
-var timline = document.getElementsByClassName('twitter-timeline');
 var height = window.screen.height;
 var frame = document.getElementsByClassName('frm');
 var homeweb = document.getElementsByClassName('web');
 var youtube = document.getElementsByClassName('ybe');
+var timline = document.getElementsByClassName('twitter-timeline');
 
 var each = document.getElementsByTagName('a');
 for(var i=0; i<each.length; i++){
