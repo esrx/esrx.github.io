@@ -24,14 +24,14 @@ for(var i=0; i<each.length; i++){
     element.setAttribute('frameborder','0');
 }
 
-if(playlist===null||playlist===undefined){
+if(playlist===null||playlist==undefined){
    for(i=0; i<1; i++){
    var youtubes = youtube[i];
    youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&list=' + list);
    }
 }
 
-if(list===null||list===undefined){
+if(list===null||list==undefined){
    for(i=0; i<1; i++){
    var youtubes = youtube[i];
    youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&playlist=' + playlist);
