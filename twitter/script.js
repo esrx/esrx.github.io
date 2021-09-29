@@ -4,6 +4,7 @@ var params = new URLSearchParams(link);
 var user = params.get("user");
 var lists = params.get("lists");
 var list = params.get("list");
+var playlist = params.get("playlist");
 var height = window.screen.height;
 var frame = document.getElementsByClassName('frm');
 var homeweb = document.getElementsByClassName('web');
@@ -23,6 +24,20 @@ for(var i=0; i<each.length; i++){
     element.setAttribute('frameborder','0');
 }
 
+if(playlist=''){
+   for(i=0; i<1; i++){
+   var youtubes = youtube[i];
+   youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&list=' + list);
+   }
+}
+
+if(list=''){
+   for(i=0; i<1; i++){
+   var youtubes = youtube[i];
+   youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&playlist=' + playlist);
+   }
+}
+
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
 var before = 'fill:#9da3ab;'
    for(i=0; i<1; i++){
@@ -34,8 +49,6 @@ var before = 'fill:#9da3ab;'
    var homewebs = homeweb[i];
    homewebs.setAttribute('height',height);
    homewebs.setAttribute('src','https://' + links);
-   var youtubes = youtube[i];
-   youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&list=' + list);
    };
 }
 
@@ -51,8 +64,6 @@ var before = 'fill:#eeeeee;'
    var homewebs = homeweb[i];
    homewebs.setAttribute('height',height);
    homewebs.setAttribute('src','https://' + links);
-   var youtubes = youtube[i];
-   youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&list=' + list);
    };
 }
 
