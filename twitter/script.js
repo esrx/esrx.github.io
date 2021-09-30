@@ -5,7 +5,6 @@ var user = params.get("user");
 var lists = params.get("lists");
 var list = params.get("list");
 var playlist = params.get("playlist");
-var end = params.get("end");
 var height = window.screen.height;
 var frame = document.getElementsByClassName('frm');
 var homeweb = document.getElementsByClassName('web');
@@ -35,7 +34,7 @@ if(playlist===null||playlist==''){
 if(list===null||list==''){
    for(i=0; i<1; i++){
    var youtubes = youtube[i];
-   youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&playlist=' + playlist + '&end=' + end);
+   youtubes.setAttribute('src','https://www.youtube.com/embed/?playsinline=1&modestbranding=1&loop=1&playlist=' + playlist);
    }
 }
 
