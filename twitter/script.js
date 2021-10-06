@@ -6,6 +6,7 @@ var lists = params.get("lists");
 var list = params.get("list");
 var playlist = params.get("playlist");
 var height = window.screen.height;
+var height = height - 200;
 var frame = document.getElementsByClassName('frm');
 var homeweb = document.getElementsByClassName('web');
 var youtube = document.getElementsByClassName('ybe');
