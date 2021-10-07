@@ -1,6 +1,8 @@
 概念設計
 https://esrx.github.io/twitter/
 
+ボタンを押した時にボタンを上書きして、二重タップ以降のボタンを作る
+
 block
 
 limit
