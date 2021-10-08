@@ -35,7 +35,7 @@ if(playlist===null||playlist==''){
 if(list===null||list==''){
    for(i=0; i<1; i++){
    var youtubes = youtube[i];
-   youtubes.setAttribute('src','https://www.youtube-nocookie.com/embed/' + playlist + '?playsinline=1&playlist=' + playlist + '&loop=1');
+   youtubes.setAttribute('src','https://www.youtube-nocookie.com/embed?playlist=' + playlist + '&loop=1');
    }
 }
 
