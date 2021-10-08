@@ -28,14 +28,14 @@ for(var i=0; i<each.length; i++){
 if(playlist===null||playlist==''){
    for(i=0; i<1; i++){
    var youtubes = youtube[i];
-   youtubes.setAttribute('src','https://www.youtube.com/embed?playsinline=1&loop=1&list=' + list);
+   youtubes.setAttribute('src','https://www.youtube-nocookie.com/embed?playsinline=1&loop=1&list=' + list);
    }
 }
 
 if(list===null||list==''){
    for(i=0; i<1; i++){
    var youtubes = youtube[i];
-   youtubes.setAttribute('src','https://www.youtube.com/embed/' + playlist + '?playsinline=1&playlist=' + playlist + '&loop=1');
+   youtubes.setAttribute('src','https://www.youtube-nocookie.com/embed/' + playlist + '?playsinline=1&playlist=' + playlist + '&loop=1');
    }
 }
 
