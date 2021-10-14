@@ -12,6 +12,14 @@ var homeweb = document.getElementsByClassName('web');
 var youtube = document.getElementsByClassName('ybe');
 var timline = document.getElementsByClassName('twitter-timeline');
 
+var request = new XMLHttpRequest();
+request.open('GET','https://publish.twitter.com/oembed?url=https://twitter.com/i/lists/' + lists ,true);
+request.responseType = 'json';
+var data = request.response;
+var target = data['html'];
+var target = target.replace(/\/g,'');
+var timeline1 = target.match(https:\/\/twitter\.com\/[a-zA-Z0-9_]{1,15}\/lists\/[0-9]{10,20}\?);
+
 var each = document.getElementsByTagName('a');
 for(var i=0; i<each.length; i++){
     var element = each[i];
@@ -43,7 +51,7 @@ if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
 var before = 'fill:#9da3ab;'
    for(i=0; i<1; i++){
    var timelines = timline[i];
-   timelines.setAttribute('href','https://twitter.com/' + user + '/lists/' + lists);
+   timelines.setAttribute('href',timeline1);
    var frames = frame[i];
    frames.setAttribute('height',height);
    frames.setAttribute('src','https://tweet.lambda.dance/search');
