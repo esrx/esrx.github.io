@@ -17,10 +17,10 @@ request.open('GET','https://publish.twitter.com/oembed?url=https://twitter.com/i
 request.responseType = 'json';
 request.send();
 request.addEventListener('load',function() {
-var data = this.response;
-var targets = data['html'];
-var targets = targets.replace(/\/g,'');
-var timeline1 = targets.match(https:\/\/twitter\.com\/[a-zA-Z0-9_]{1,15}\/lists\/[0-9]{10,20}\?);
+   var data = this.response;
+   var targets = data['html'];
+   var targets = targets.replace(/\/g,'');
+   var timeline1 = targets.match(https:\/\/twitter\.com\/[a-zA-Z0-9_]{1,15}\/lists\/[0-9]{10,20}\?);
    });
 
 var each = document.getElementsByTagName('a');
