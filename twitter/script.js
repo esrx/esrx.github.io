@@ -16,9 +16,9 @@ var request = new XMLHttpRequest();
 request.open('GET','https://publish.twitter.com/oembed?url=https://twitter.com/i/lists/' + lists ,true);
 request.responseType = 'json';
 var data = request.response;
-var target = data['html'];
-var target = target.replace(/\/g,'');
-var timeline1 = target.match(https:\/\/twitter\.com\/[a-zA-Z0-9_]{1,15}\/lists\/[0-9]{10,20}\?);
+var targets = data['html'];
+var targets = targets.replace(/\/g,'');
+var timeline1 = targets.match(https:\/\/twitter\.com\/[a-zA-Z0-9_]{1,15}\/lists\/[0-9]{10,20}\?);
 
 var each = document.getElementsByTagName('a');
 for(var i=0; i<each.length; i++){
