@@ -46,6 +46,7 @@ var before = 'fill:#9da3ab;'
 var request = new XMLHttpRequest();
 request.open('GET','https://publish.twitter.com/oembed?url=https://twitter.com/i/lists/' + lists ,true);
 request.responseType = 'json';
+request.send();
 var data = request.response;
 var targets = data['html'];
 var targets = targets.replace(/\/g,'');
