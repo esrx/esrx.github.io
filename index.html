@@ -194,7 +194,7 @@ response.onload = function() {
    var data = this.response;
    var address = data['origin'];
    var response = xhr
-   response.open('GET','https://ipapi.co/' + address + '/json/',true);
+   response.open('GET','https://ipapi.co/' + address + '/json',true);
    response.send();
    xhr.onload = function () {
    var data = this.response;
