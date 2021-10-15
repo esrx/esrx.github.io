@@ -200,9 +200,12 @@ response.onload = function() {
    xhr.onload = function () {
    var data = this.response;
    var country = data["country_name"];
-   var x = document.getElementsByClassName("xhr");
-   x.innerHTML = address + country;
    }
+}
+
+var x = document.getElementsByClassName("xhr");
+for(i=0; i<1; i++){
+x.innerHTML = address + country;
 }
 </script>
 <script src="//vjs.zencdn.net/7.14.0/video.min.js"></script>
