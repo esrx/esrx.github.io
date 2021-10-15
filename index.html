@@ -199,7 +199,9 @@ response.onload = function() {
    response.send();
    xhr.onload = function () {
    var data = this.response;
-   console.log(data["country_name"]);
+   var country = data["country_name"];
+   var x = document.getElementsByClassName("xhr");
+   x.innerHTML = address + country;
    }
 }
 </script>
