@@ -140,6 +140,7 @@
 <a href="https://www.mopub.com/ja"><img src="https://www.mopub.com/etc/designs/mopub-aem-twitter/public/svg/mopub.svg"></a>
 <a href="code"><img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Code.svg"></a>
 <a href="https://shop.aeon.com/netsuper/hajimete"><img src="https://upload.wikimedia.org/wikipedia/commons/6/69/ÆON-Logo.svg"></a>
+<p class="xhr"></p>
 </body>
 <script>
 window.addEventListener('DOMContentLoaded',function() {
@@ -183,14 +184,24 @@ if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
    });
 }
 
-var request = new XMLHttpRequest();
-request.open('GET','https://httpbin.org/ip',true);
-request.responseType = 'json';
-request.send();
-request.addEventListener('load',function() {
+var xhr = new XMLHttpRequest();
+xhr.responseType = 'json';
+
+var response = xhr
+response.open('GET','https://httpbin.org/ip',true);
+response.send();
+response.onload = function() {
    var data = this.response;
-   console.log(data["origin"]);
-   });
+   var address = data["origin"];
+   console.log(address);
+   var response = xhr
+   response.open('GET','https://ipapi.co/' + address + '/json/',true);
+   response.send();
+   xhr.onload = function () {
+   var data = this.response;
+   console.log(data["country_name"]);
+   }
+}
 </script>
 <script src="//vjs.zencdn.net/7.14.0/video.min.js"></script>
 <script src="//weatherwidget.io/js/widget.min.js"></script>
