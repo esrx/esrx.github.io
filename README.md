@@ -121,3 +121,14 @@ aread.value = areas + " " + aread.value;
 var area = document.getElementById('migi').value;document.getElementById('texta').value += " " + area ;
 }
 ```
+```
+var request = new XMLHttpRequest();
+request.open('GET','https://httpbin.org/ip',true);
+request.responseType = 'json';
+request.send();
+request.addEventListener('load',function() {
+   var data = this.response;
+   console.log(data["origin"]);
+   });
+
+```
