@@ -192,15 +192,15 @@ response.open('GET','https://httpbin.org/ip',true);
 response.send();
 response.onload = function() {
    var data = this.response;
-   var address = data["origin"];
+   var address = data['origin'];
    var response = xhr
    response.open('GET','https://ipapi.co/' + address + '/json/',true);
    response.send();
    xhr.onload = function () {
    var data = this.response;
-   var country = data["country_name"];
+   var country = data['country_name'];
    var myh1 = document.getElementById("xhr");
-   myh1.innerHTML = address + country;
+   myh1.innerHTML = address + '　' + country;
    }
 }
 </script>
