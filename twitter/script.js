@@ -10,7 +10,7 @@ var height = height * 0.75;
 var frame = document.getElementsByClassName('frm');
 var homeweb = document.getElementsByClassName('web');
 var youtube = document.getElementsByClassName('ybe');
-var timline = document.getElementsByClassName('twitter-timeline');
+var timeline = document.getElementsByClassName('twitter-timeline');
 
 var each = document.getElementsByTagName('a');
 for(var i=0; i<each.length; i++){
@@ -42,7 +42,7 @@ if(list===null||list==''){
 if(window.matchMedia('(prefers-color-scheme:light)').matches==true){
 var before = 'fill:#9da3ab;'
    for(i=0; i<1; i++){
-   var timelines = timline[i];
+   var timelines = timeline[i];
    timelines.setAttribute('href','https://twitter.com/' + user + '/lists/' + lists);
    var frames = frame[i];
    frames.setAttribute('height',height);
@@ -56,7 +56,7 @@ var before = 'fill:#9da3ab;'
 if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
 var before = 'fill:#eeeeee;'
    for(i=0; i<1; i++){
-   var timelines = timline[i];
+   var timelines = timeline[i];
    timelines.setAttribute('href','https://twitter.com/' + user + '/lists/' + lists);
    timelines.setAttribute('data-theme','dark');
    var frames = frame[i];
