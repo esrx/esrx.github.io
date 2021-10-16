@@ -188,20 +188,13 @@ var xhr = new XMLHttpRequest();
 xhr.responseType = 'json';
 
 var response = xhr
-response.open('GET','https://httpbin.org/ip',true);
+response.open('GET','https://cdn.syndication.twimg.com/timeline/list?callback=__twttr.callbacks&domain=esrx.github.io&lang=ja&list_slug=list3&screen_name=ModJapan_jp',true);
 response.send();
 response.onload = function() {
    var data = this.response;
-   var address = data['origin'];
-   var response = xhr
-   response.open('GET','https://ipapi.co/' + address + '/json',true);
-   response.send();
-   xhr.onload = function () {
-   var data = this.response;
-   var country = data['country_name'];
+   var address = data['headers'];
    var myh1 = document.getElementById("xhr");
-   myh1.innerHTML = address + '　' + country;
-   }
+   myh1.innerHTML = address;
 }
 </script>
 <script src="//vjs.zencdn.net/7.14.0/video.min.js"></script>
