@@ -153,3 +153,11 @@ response.onload = function() {
    }
 }
 ```
+
+```
+var each = document.querySelectorAll('p,blockquote');
+for(var i=0; i<each.length; i++){
+    var element = each[i].innerHTML;
+    each[i].innerHTML = element.replace(/\n/g,'<br>');
+}
+```
