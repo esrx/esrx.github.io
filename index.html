@@ -198,8 +198,7 @@ response.onload = function() {
    xhr.onload = function () {
    var data = this.response;
    var country = data['country_name'];
-   var type = document.getElementById("xhr");
-   type.innerHTML = address + '　' + country;
+   document.body.insertAdjacentHTML('beforeend', '<br>' + address + '　' + country);
    }
 }
 </script>
