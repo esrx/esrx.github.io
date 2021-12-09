@@ -161,3 +161,37 @@ for(var i=0; i<each.length; i++){
     each[i].innerHTML = element.replace(/\n/g,'<br>');
 }
 ```
+
+```
+var each = document.querySelectorAll('.twitter-tweet');
+for(var i=1; i<each.length; i++){
+    var element = each[i];
+    element.setAttribute('class','twitter');
+    element.outerHTML = '<button id="Twitter' + i + '">' + element.outerHTML + '</button>';
+}
+
+var each = document.getElementsByTagName('button');
+for(var i=0; i<each.length; i++){
+    each[i].addEventListener('click',(event)=>{
+    event.target.firstElementChild.setAttribute('class','twitter-tweet');
+    twttr.widgets.load(document.getElementById(event.target.id));
+    })
+}
+
+var each = document.querySelectorAll('.twitter');
+for(var i=0; i<each.length; i++){
+    each[i].addEventListener('click',(event)=>{
+    event.target.setAttribute('class','twitter-tweet');
+    twttr.widgets.load(document.getElementById(event.target.firstElementChild.id));
+    })
+}
+
+var each = document.querySelectorAll('.twitter>a');
+for(var i=0; i<each.length; i++){
+    each[i].addEventListener('click',(event)=>{
+    event.preventDefault();
+    event.target.parentElement.setAttribute('class','twitter-tweet');
+    twttr.widgets.load(document.getElementById(event.target.parentElement.parentElement.id));
+    })
+}
+```
