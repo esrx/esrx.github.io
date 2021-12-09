@@ -163,6 +163,14 @@ for(var i=0; i<each.length; i++){
 ```
 
 ```
+button {
+width:100%;
+margin:0px;
+padding:0px;
+border:none;
+-webkit-tap-highlight-color:transparent;
+}
+
 var each = document.querySelectorAll('.twitter-tweet');
 for(var i=1; i<each.length; i++){
     var element = each[i];
