@@ -5,8 +5,6 @@ var links = decodeURIComponent(link);
 
 regex = new RegExp('\\[[0-9].*\\]');
 
-if(regex.test(links)){
-
-}
+var match = links.match(regex);
 
 document.getElementById().src = links
