@@ -182,25 +182,6 @@ if(window.matchMedia('(prefers-color-scheme:dark)').matches==true){
       $(this).attr('data-theme','gray');
    });
 }
-
-var xhr = new XMLHttpRequest();
-xhr.responseType = 'json';
-
-var response = xhr
-response.open('GET','https://httpbin.org/ip',true);
-response.send();
-response.onload = function() {
-   var data = this.response;
-   var address = data['origin'];
-   var response = xhr
-   response.open('GET','https://ipapi.co/' + address + '/json',true);
-   response.send();
-   xhr.onload = function () {
-   var data = this.response;
-   var country = data['country_name'];
-   document.body.insertAdjacentHTML('beforeend', '<br>' + address + '　' + country);
-   }
-}
 </script>
 <script src="//vjs.zencdn.net/7.14.0/video.min.js"></script>
 <script src="//weatherwidget.io/js/widget.min.js"></script>
