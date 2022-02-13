@@ -231,7 +231,7 @@ var starget = exesearch.replace(/\+/g,' ');
 var result = unescape( starget );
 $('#input_copyoutput').text( result );
 $('#btn_copy').text('content_paste');
-$('#googlelight').attr('href', 'https://www.google.co.jp/search?q=' + target + '+' + timeg);
+$('#googlelight').attr('href', 'https://www.google.com/search?q=' + target + '+' + timeg);
 $('#googledark').attr('href', '/google/#gsc.tab=0&gsc.q=' + target );
 $('#lightdack').attr('href', 'https://start.duckduckgo.com/?q=' + target + '&k9=1558d5');
 $('#darkdack').attr('href', 'https://start.duckduckgo.com/?q=' + target + '&kl=jp-jp&kae=d&k7=23282f&k21=2a3139&kj=353535&k9=51a5fe&kaa=4285f4&kx=36b685&ka=n&ko=s&ks=m&kp=-2');
