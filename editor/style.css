@@ -1,0 +1,7 @@
+textarea{
+  counter-increment:numbers;
+}
+
+textarea::before {
+  content:counter(numbers)"　";
+}
